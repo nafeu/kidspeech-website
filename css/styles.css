@@ -13,3 +13,20 @@ body {
     padding-top: 56px;
   }
 }
+
+.navbar {
+  background-color: #2B4296 !important;
+}
+
+#card-area img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.text-red {
+  color: #c0392b;
+}
+
+.text-blue {
+  color: #2B4296;
+}
