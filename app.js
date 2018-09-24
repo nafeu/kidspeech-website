@@ -5,6 +5,10 @@ var app = angular.module('myApp', [
   'ngRoute',
   'myApp.about',
   'myApp.home',
+  'myApp.contact',
+  'myApp.services',
+  'myApp.initiatives',
+  'myApp.sandbox',
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');
