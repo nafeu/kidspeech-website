@@ -10,15 +10,9 @@ angular.module('myApp.home', ['ngRoute'])
 }])
 
 .controller('HomeCtrl', ['$scope', 'apiService', 'storageService', function($scope, apiService, storageService) {
-  $scope.storageTest = storageService.get('storageTest');
 
-  $scope.save = function(key, data) {
-    storageService.set(key, data);
-    alert(storageService.read());
-  }
-
-  $scope.testExport = function() {
-    alert(storageService.export())
-  }
+  $('.carousel').carousel({
+    interval: 5000
+  })
 
 }]);
