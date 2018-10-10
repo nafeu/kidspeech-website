@@ -1,51 +1,79 @@
-<div class="row justify-content-center mt-4 mb-4">
+<style type="text/css">
+
+  .follow-header {
+    padding: 50px 0px 20px 0px;
+  }
+
+  .social-btn {
+    width: 80px;
+  }
+
+  .submit-btn {
+    font-size: 1.4em;
+  }
+
+  .contact-header {
+    font-weight: bold;
+    font-size: 1.25em;
+  }
+
+</style>
+
+<div class="row my-4">
+  <div id="logo-container" class="col-md-6">
+    <div class="mt-3 d-flex justify-content-center">
+      <div id="logo" class="row"></div>
+    </div>
+  </div>
+  <div class="col-md-6 text-center">
+    <h4 class="mt-4 follow-header">Follow us on social media</h4>
+    <i class="social-btn fa fa-twitter"></i>
+    <i class="social-btn fa fa-facebook"></i>
+    <i class="social-btn fa fa-linkedin"></i>
+    <i class="social-btn fa fa-envelope"></i>
+  </div>
+</div>
+
+<!-- <div class="row justify-content-center mt-4 mb-4">
   <div class="col-md-4">
     <div class="main-logo"></div>
   </div>
   <div class="col-md-8 text-center">
     <h2 class="mt-4">Contact Us</h2>
-    <p class="mt-4">KIDSPEECH™ || <strong>Speech Pathology ('speech therapy for kids’),<br>Toronto and GTA Speech-Language Pathologists,<br>certified Life Care Planners - kids, teens, adults</strong></p>
   </div>
-</div>
+</div> -->
 
 <div class="row mb-4">
-  <div class="col-md-4 text-center">
-    <h2 class="mt-4">Maria Scaringi</h2>
-    Founder<br>
-    Speech-Language Pathologist<br>
-    Rehabilitation Manager<br>
-    Life Care Planner<br>
-    Clinical Instructor
-  </div>
-
-  <div class="col-md-8 mb-md-0 mb-5">
-    <h5>Questions?</h5>
+  <div class="col-md-12 mb-md-0 mb-5">
+    <h5 class="contact-header mt-4 mb-4">Send us your questions</h5>
     <form id="contact-form" name="contact-form" action="mail.php" method="POST">
       <div class="row">
-        <div class="col-md-6">
-          <div class="md-form mb-0">
-            <input placeholder="Enter name" type="text" id="name" name="name" class="form-control">
-            <label for="name" class="">Your name</label>
+        <div class="col-md-4">
+          <div class="md-form mb-4">
+            <input placeholder="Enter your name" type="text" id="name" name="name" class="form-control">
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="md-form mb-0">
-            <input placeholder="Enter email" type="email" id="email" name="email" class="form-control">
-            <label for="email" class="">Your email</label>
+        <div class="col-md-4">
+          <div class="md-form mb-4">
+            <input placeholder="Enter your email" type="email" id="email" name="email" class="form-control">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="md-form mb-4">
+            <input placeholder="Enter your phone number" type="tel" id="email" name="email" class="form-control">
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12">
-          <div class="md-form">
-            <textarea placeholder="Enter message" type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-            <label for="message">Your message</label>
+          <div class="md-form mb-4">
+            <textarea placeholder="Enter your message" type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
           </div>
         </div>
       </div>
     </form>
-    <div class="text-center text-md-left">
-      <a class="btn btn-outline-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+    <div class="text-center">
+      <a class="btn btn-primary submit-btn" onclick="document.getElementById('contact-form').submit();">Submit</a>
     </div>
   </div>
 </div>
@@ -58,11 +86,12 @@
     <div class="bd-example">
       <address>
         <strong>KIDSPEECH™</strong><br>
-        1-19 Larabee Cr<br>
+        19 Larabee Cr., #1<br>
         Toronto, ON, CA<br>
+        M3A 3E6<br>
         <br>
 
-        Phone: <a href="tel:4164477325">(416) 44 SPEAK (447-7325)</a><br>
+        Phone: <a href="tel:4164477325">(416) 447-7325</a><br>
         Fax: (416) 391-4078 <br>
         Email: <a href="mailto:#">info@kidspeech.ca</a>
       </address>
@@ -71,20 +100,8 @@
   </div>
 
 
-  <div class="col-md-4">
-
-<iframe width="300" height="190" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="border" src="https://maps.google.ca/maps?f=q&source=s_q&hl=en&geocode=&q=1-19+Larabee+Crescent,+Toronto,+Ontario&aq=&sll=43.753737,-79.332747&sspn=0.003937,0.009645&ie=UTF8&hq=&hnear=19+Larabee+Crescent,+Toronto,+Toronto+Division,+Ontario+M3A+3E6&t=m&ll=43.753117,-79.335365&spn=0.01178,0.029955&z=14&iwloc=A&output=embed"></iframe>
-
-  </div>
-
-  <div class="col-md-4">
-
-    <p><strong>Follow Us On Social Media</strong></p>
-    <i class="social-btn fa fa-twitter"></i>
-    <i class="social-btn fa fa-facebook"></i>
-    <i class="social-btn fa fa-linkedin"></i>
-    <i class="social-btn fa fa-envelope"></i>
-
+  <div class="col-md-8">
+    <iframe width="100%" height="190" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="border" src="https://maps.google.ca/maps?f=q&source=s_q&hl=en&geocode=&q=1-19+Larabee+Crescent,+Toronto,+Ontario&aq=&sll=43.753737,-79.332747&sspn=0.003937,0.009645&ie=UTF8&hq=&hnear=19+Larabee+Crescent,+Toronto,+Toronto+Division,+Ontario+M3A+3E6&t=m&ll=43.753117,-79.335365&spn=0.01178,0.029955&z=14&iwloc=A&output=embed"></iframe>
   </div>
 </div>
 

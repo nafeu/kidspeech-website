@@ -94,6 +94,47 @@ body {
   font-family: 'Times New Roman', 'Helvetica', Arial, sans-serif;
 }
 
+#logo {
+  background-image: url('../img/logo-390.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 180px;
+  width: 100%;
+}
+
+.btn-primary {
+  background-color: #24388d;
+  border-color: #24388d;
+  color: white !important;
+  font-style: italic;
+}
+
+
+.highlight {
+  color: red;
+}
+
+.exclamation {
+  font-size: 1em;
+}
+
+.slogan {
+  font-size: 1.1em;
+  margin-top: 15px;
+  margin-bottom: 45px;
+}
+
+#social-media {
+  margin-bottom: 30px;
+}
+
+#high-slogan {
+  padding: 20px 0px 20px 0px;
+  width: 100%;
+}
+
+
 .card-title {
   font-size: 1.3em;
   font-weight: bold;
