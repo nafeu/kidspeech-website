@@ -98,6 +98,22 @@ body {
   padding-top: 50px;
 }
 
+.social-btn {
+  padding: 10px;
+  color: white;
+  background-color: #24388d;
+  border-radius: 5px;
+  width: 40px;
+  font-size: 1.2em;
+  text-align: center;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+#main-container {
+  min-height: 800px;
+}
+
 /*!
  * Start Bootstrap - Small Business (https://startbootstrap.com/template-overviews/small-business)
  * Copyright 2013-2017 Start Bootstrap
@@ -129,6 +145,15 @@ body {
 
 .text-blue {
   color: #2B4296;
+}
+
+.main-logo {
+  background-image: url('img/logo-390.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 180px;
+  width: 100%;
 }
 
 
