@@ -148,7 +148,7 @@ body {
 }
 
 .main-logo {
-  background-image: url('img/logo-390.jpg');
+  background-image: url('../img/logo-390.jpg');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
