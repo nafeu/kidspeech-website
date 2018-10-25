@@ -1,49 +1,38 @@
-<!-- 0-2
-2
-2-4
-4
-6
-8
-10
-12
-14
-16
-16-18
-20
-22
-28
-32
-34
-36
-48
-60
-
-Coos
-Laughs
-Babbles
-Mama/Dada
-1st Word
-4-6 Single Words
-Tells Needs
-2-Word Sentences
-50+ Single Words
-Uses Nouns & Verbs
-Talks in Sentences
-Uses All Speech Sounds -->
-
 <style>
   th {
     width: 50px;
     text-align: center;
   }
+
   td {
     width: 20px;
+    border-right: 1px solid #e5e5e5;
+    cursor: pointer;
   }
+
+  tr {
+    border-bottom: 1px solid #e5e5e5;
+    height: 35px;
+  }
+
   .item-name {
     width: 150px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.85em;
   }
-  .checked {
-    background-color: red;
+
+/*  .checked {
+    background-color: #4c80c3;
+    border-radius: 30px;
+  }*/
+
+  .chart-check {
+    width: 20px;
+    height: 20px;
+    background-color: #4c80c3;
+    border-radius: 30px;
+    margin: 0 auto;
   }
 </style>
 
@@ -56,6 +45,8 @@ Uses All Speech Sounds -->
     <p class="mt-4">KIDSPEECH™ || <strong>Speech Pathology ('speech therapy for kids’),<br>Toronto and GTA Speech-Language Pathologists,<br>certified Life Care Planners - kids, teens, adults</strong></p>
   </div>
 </div>
+
+<h1>Selected Age: {{currentAge}}</h1>
 
 <table>
   <tr>
@@ -86,266 +77,266 @@ Uses All Speech Sounds -->
   </tr>
   <tr>
     <td class="item-name">coos</td>
-    <td class="checked"></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td ng-click="selectCell(1, 0)" class="checked"><div class="chart-check"></div></td>
+    <td ng-click="selectCell(1, 1)"></td>
+    <td ng-click="selectCell(1, 2)"></td>
+    <td ng-click="selectCell(1, 3)"></td>
+    <td ng-click="selectCell(1, 4)"></td>
+    <td ng-click="selectCell(1, 5)"></td>
+    <td ng-click="selectCell(1, 6)"></td>
+    <td ng-click="selectCell(1, 7)"></td>
+    <td ng-click="selectCell(1, 8)"></td>
+    <td ng-click="selectCell(1, 9)"></td>
+    <td ng-click="selectCell(1, 10)"></td>
+    <td ng-click="selectCell(1, 11)"></td>
+    <td ng-click="selectCell(1, 12)"></td>
+    <td ng-click="selectCell(1, 13)"></td>
+    <td ng-click="selectCell(1, 14)"></td>
+    <td ng-click="selectCell(1, 15)"></td>
+    <td ng-click="selectCell(1, 16)"></td>
+    <td ng-click="selectCell(1, 17)"></td>
+    <td ng-click="selectCell(1, 18)"></td>
   </tr>
   <tr>
     <td class="item-name">laughs</td>
-    <td></td>
-    <td class="checked"></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td ng-click="selectCell(2, 0)"></td>
+    <td ng-click="selectCell(2, 1)" class="checked"><div class="chart-check"></div></td>
+    <td ng-click="selectCell(2, 2)"></td>
+    <td ng-click="selectCell(2, 3)"></td>
+    <td ng-click="selectCell(2, 4)"></td>
+    <td ng-click="selectCell(2, 5)"></td>
+    <td ng-click="selectCell(2, 6)"></td>
+    <td ng-click="selectCell(2, 7)"></td>
+    <td ng-click="selectCell(2, 8)"></td>
+    <td ng-click="selectCell(2, 9)"></td>
+    <td ng-click="selectCell(2, 10)"></td>
+    <td ng-click="selectCell(2, 11)"></td>
+    <td ng-click="selectCell(2, 12)"></td>
+    <td ng-click="selectCell(2, 13)"></td>
+    <td ng-click="selectCell(2, 14)"></td>
+    <td ng-click="selectCell(2, 15)"></td>
+    <td ng-click="selectCell(2, 16)"></td>
+    <td ng-click="selectCell(2, 17)"></td>
+    <td ng-click="selectCell(2, 18)"></td>
   </tr>
   <tr>
     <td class="item-name">babbles</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td class="checked"></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td ng-click="selectCell(3, 0)"></td>
+    <td ng-click="selectCell(3, 1)"></td>
+    <td ng-click="selectCell(3, 2)"></td>
+    <td ng-click="selectCell(3, 3)"></td>
+    <td ng-click="selectCell(3, 4)" class="checked"><div class="chart-check"></div></td>
+    <td ng-click="selectCell(3, 5)"></td>
+    <td ng-click="selectCell(3, 6)"></td>
+    <td ng-click="selectCell(3, 7)"></td>
+    <td ng-click="selectCell(3, 8)"></td>
+    <td ng-click="selectCell(3, 9)"></td>
+    <td ng-click="selectCell(3, 10)"></td>
+    <td ng-click="selectCell(3, 11)"></td>
+    <td ng-click="selectCell(3, 12)"></td>
+    <td ng-click="selectCell(3, 13)"></td>
+    <td ng-click="selectCell(3, 14)"></td>
+    <td ng-click="selectCell(3, 15)"></td>
+    <td ng-click="selectCell(3, 16)"></td>
+    <td ng-click="selectCell(3, 17)"></td>
+    <td ng-click="selectCell(3, 18)"></td>
   </tr>
   <tr>
     <td class="item-name">mama/dada</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td class="checked"></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td ng-click="selectCell(4, 0)"></td>
+    <td ng-click="selectCell(4, 1)"></td>
+    <td ng-click="selectCell(4, 2)"></td>
+    <td ng-click="selectCell(4, 3)"></td>
+    <td ng-click="selectCell(4, 4)"></td>
+    <td ng-click="selectCell(4, 5)" class="checked"><div class="chart-check"></div></td>
+    <td ng-click="selectCell(4, 6)"></td>
+    <td ng-click="selectCell(4, 7)"></td>
+    <td ng-click="selectCell(4, 8)"></td>
+    <td ng-click="selectCell(4, 9)"></td>
+    <td ng-click="selectCell(4, 10)"></td>
+    <td ng-click="selectCell(4, 11)"></td>
+    <td ng-click="selectCell(4, 12)"></td>
+    <td ng-click="selectCell(4, 13)"></td>
+    <td ng-click="selectCell(4, 14)"></td>
+    <td ng-click="selectCell(4, 15)"></td>
+    <td ng-click="selectCell(4, 16)"></td>
+    <td ng-click="selectCell(4, 17)"></td>
+    <td ng-click="selectCell(4, 18)"></td>
   </tr>
   <tr>
     <td class="item-name">1st word</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td class="checked"></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td ng-click="selectCell(5, 0)"></td>
+    <td ng-click="selectCell(5, 1)"></td>
+    <td ng-click="selectCell(5, 2)"></td>
+    <td ng-click="selectCell(5, 3)"></td>
+    <td ng-click="selectCell(5, 4)"></td>
+    <td ng-click="selectCell(5, 5)"></td>
+    <td ng-click="selectCell(5, 6)" class="checked"><div class="chart-check"></div></td>
+    <td ng-click="selectCell(5, 7)"></td>
+    <td ng-click="selectCell(5, 8)"></td>
+    <td ng-click="selectCell(5, 9)"></td>
+    <td ng-click="selectCell(5, 10)"></td>
+    <td ng-click="selectCell(5, 11)"></td>
+    <td ng-click="selectCell(5, 12)"></td>
+    <td ng-click="selectCell(5, 13)"></td>
+    <td ng-click="selectCell(5, 14)"></td>
+    <td ng-click="selectCell(5, 15)"></td>
+    <td ng-click="selectCell(5, 16)"></td>
+    <td ng-click="selectCell(5, 17)"></td>
+    <td ng-click="selectCell(5, 18)"></td>
   </tr>
   <tr>
     <td class="item-name">4-6 single words</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td class="checked"></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td ng-click="selectCell(6, 0)"></td>
+    <td ng-click="selectCell(6, 1)"></td>
+    <td ng-click="selectCell(6, 2)"></td>
+    <td ng-click="selectCell(6, 3)"></td>
+    <td ng-click="selectCell(6, 4)"></td>
+    <td ng-click="selectCell(6, 5)"></td>
+    <td ng-click="selectCell(6, 6)"></td>
+    <td ng-click="selectCell(6, 7)"></td>
+    <td ng-click="selectCell(6, 8)"></td>
+    <td ng-click="selectCell(6, 9)" class="checked"><div class="chart-check"></div></td>
+    <td ng-click="selectCell(6, 10)"></td>
+    <td ng-click="selectCell(6, 11)"></td>
+    <td ng-click="selectCell(6, 12)"></td>
+    <td ng-click="selectCell(6, 13)"></td>
+    <td ng-click="selectCell(6, 14)"></td>
+    <td ng-click="selectCell(6, 15)"></td>
+    <td ng-click="selectCell(6, 16)"></td>
+    <td ng-click="selectCell(6, 17)"></td>
+    <td ng-click="selectCell(6, 18)"></td>
   </tr>
   <tr>
     <td class="item-name">tells needs</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td class="checked"></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td ng-click="selectCell(7, 0)"></td>
+    <td ng-click="selectCell(7, 1)"></td>
+    <td ng-click="selectCell(7, 2)"></td>
+    <td ng-click="selectCell(7, 3)"></td>
+    <td ng-click="selectCell(7, 4)"></td>
+    <td ng-click="selectCell(7, 5)"></td>
+    <td ng-click="selectCell(7, 6)"></td>
+    <td ng-click="selectCell(7, 7)"></td>
+    <td ng-click="selectCell(7, 8)"></td>
+    <td ng-click="selectCell(7, 9)"></td>
+    <td ng-click="selectCell(7, 10)" class="checked"><div class="chart-check"></div></td>
+    <td ng-click="selectCell(7, 11)"></td>
+    <td ng-click="selectCell(7, 12)"></td>
+    <td ng-click="selectCell(7, 13)"></td>
+    <td ng-click="selectCell(7, 14)"></td>
+    <td ng-click="selectCell(7, 15)"></td>
+    <td ng-click="selectCell(7, 16)"></td>
+    <td ng-click="selectCell(7, 17)"></td>
+    <td ng-click="selectCell(7, 18)"></td>
   </tr>
   <tr>
     <td class="item-name">2-word sentences</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td class="checked"></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td ng-click="selectCell(8, 0)"></td>
+    <td ng-click="selectCell(8, 1)"></td>
+    <td ng-click="selectCell(8, 2)"></td>
+    <td ng-click="selectCell(8, 3)"></td>
+    <td ng-click="selectCell(8, 4)"></td>
+    <td ng-click="selectCell(8, 5)"></td>
+    <td ng-click="selectCell(8, 6)"></td>
+    <td ng-click="selectCell(8, 7)"></td>
+    <td ng-click="selectCell(8, 8)"></td>
+    <td ng-click="selectCell(8, 9)"></td>
+    <td ng-click="selectCell(8, 10)"></td>
+    <td ng-click="selectCell(8, 11)" class="checked"><div class="chart-check"></div></td>
+    <td ng-click="selectCell(8, 12)"></td>
+    <td ng-click="selectCell(8, 13)"></td>
+    <td ng-click="selectCell(8, 14)"></td>
+    <td ng-click="selectCell(8, 15)"></td>
+    <td ng-click="selectCell(8, 16)"></td>
+    <td ng-click="selectCell(8, 17)"></td>
+    <td ng-click="selectCell(8, 18)"></td>
   </tr>
   <tr>
     <td class="item-name">50+ single words</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td class="checked"></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td ng-click="selectCell(9, 0)"></td>
+    <td ng-click="selectCell(9, 1)"></td>
+    <td ng-click="selectCell(9, 2)"></td>
+    <td ng-click="selectCell(9, 3)"></td>
+    <td ng-click="selectCell(9, 4)"></td>
+    <td ng-click="selectCell(9, 5)"></td>
+    <td ng-click="selectCell(9, 6)"></td>
+    <td ng-click="selectCell(9, 7)"></td>
+    <td ng-click="selectCell(9, 8)"></td>
+    <td ng-click="selectCell(9, 9)"></td>
+    <td ng-click="selectCell(9, 10)"></td>
+    <td ng-click="selectCell(9, 11)"></td>
+    <td ng-click="selectCell(9, 12)" class="checked"><div class="chart-check"></div></td>
+    <td ng-click="selectCell(9, 13)"></td>
+    <td ng-click="selectCell(9, 14)"></td>
+    <td ng-click="selectCell(9, 15)"></td>
+    <td ng-click="selectCell(9, 16)"></td>
+    <td ng-click="selectCell(9, 17)"></td>
+    <td ng-click="selectCell(9, 18)"></td>
   </tr>
   <tr>
     <td class="item-name">uses nouns &amp; verbs</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td class="checked"></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td ng-click="selectCell(10, 0)"></td>
+    <td ng-click="selectCell(10, 1)"></td>
+    <td ng-click="selectCell(10, 2)"></td>
+    <td ng-click="selectCell(10, 3)"></td>
+    <td ng-click="selectCell(10, 4)"></td>
+    <td ng-click="selectCell(10, 5)"></td>
+    <td ng-click="selectCell(10, 6)"></td>
+    <td ng-click="selectCell(10, 7)"></td>
+    <td ng-click="selectCell(10, 8)"></td>
+    <td ng-click="selectCell(10, 9)"></td>
+    <td ng-click="selectCell(10, 10)"></td>
+    <td ng-click="selectCell(10, 11)"></td>
+    <td ng-click="selectCell(10, 12)"></td>
+    <td ng-click="selectCell(10, 13)"></td>
+    <td ng-click="selectCell(10, 14)" class="checked"><div class="chart-check"></div></td>
+    <td ng-click="selectCell(10, 15)"></td>
+    <td ng-click="selectCell(10, 16)"></td>
+    <td ng-click="selectCell(10, 17)"></td>
+    <td ng-click="selectCell(10, 18)"></td>
   </tr>
   <tr>
     <td class="item-name">talks in sentences</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td class="checked"></td>
-    <td></td>
-    <td></td>
+    <td ng-click="selectCell(11, 0)"></td>
+    <td ng-click="selectCell(11, 1)"></td>
+    <td ng-click="selectCell(11, 2)"></td>
+    <td ng-click="selectCell(11, 3)"></td>
+    <td ng-click="selectCell(11, 4)"></td>
+    <td ng-click="selectCell(11, 5)"></td>
+    <td ng-click="selectCell(11, 6)"></td>
+    <td ng-click="selectCell(11, 7)"></td>
+    <td ng-click="selectCell(11, 8)"></td>
+    <td ng-click="selectCell(11, 9)"></td>
+    <td ng-click="selectCell(11, 10)"></td>
+    <td ng-click="selectCell(11, 11)"></td>
+    <td ng-click="selectCell(11, 12)"></td>
+    <td ng-click="selectCell(11, 13)"></td>
+    <td ng-click="selectCell(11, 14)"></td>
+    <td ng-click="selectCell(11, 15)"></td>
+    <td ng-click="selectCell(11, 16)" class="checked"><div class="chart-check"></div></td>
+    <td ng-click="selectCell(11, 17)"></td>
+    <td ng-click="selectCell(11, 18)"></td>
   </tr>
   <tr>
     <td class="item-name">uses all speech sounds</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td class="checked"></td>
+    <td ng-click="selectCell(12, 0)"></td>
+    <td ng-click="selectCell(12, 1)"></td>
+    <td ng-click="selectCell(12, 2)"></td>
+    <td ng-click="selectCell(12, 3)"></td>
+    <td ng-click="selectCell(12, 4)"></td>
+    <td ng-click="selectCell(12, 5)"></td>
+    <td ng-click="selectCell(12, 6)"></td>
+    <td ng-click="selectCell(12, 7)"></td>
+    <td ng-click="selectCell(12, 8)"></td>
+    <td ng-click="selectCell(12, 9)"></td>
+    <td ng-click="selectCell(12, 10)"></td>
+    <td ng-click="selectCell(12, 11)"></td>
+    <td ng-click="selectCell(12, 12)"></td>
+    <td ng-click="selectCell(12, 13)"></td>
+    <td ng-click="selectCell(12, 14)"></td>
+    <td ng-click="selectCell(12, 15)"></td>
+    <td ng-click="selectCell(12, 16)"></td>
+    <td ng-click="selectCell(12, 17)"></td>
+    <td ng-click="selectCell(12, 18)" class="checked"><div class="chart-check"></div></td>
   </tr>
 </table>
