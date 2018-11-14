@@ -16,7 +16,7 @@
   }
 
   .item-name {
-    width: 150px;
+    width: 200px;
     /*text-transform: uppercase;*/
     font-weight: bold;
     font-size: 1em;
@@ -90,7 +90,7 @@
     <div class="main-logo"></div>
   </div>
   <div class="col-md-8 text-center">
-    <h2 class="mt-4">Speech-Hearing Checklist</h2>
+    <h2 class="mt-4">Speech & Language Development Checklist</h2>
     <p class="mt-4">KIDSPEECH™ || <strong>Speech Pathology ('speech therapy for kids’),<br>Toronto and GTA Speech-Language Pathologists,<br>certified Life Care Planners - kids, teens, adults</strong></p>
   </div>
 </div>
@@ -102,737 +102,679 @@
   <div class="section-btn" ng-click="currentSection = 2" ng-class="{'section-btn-selected': currentSection == 2}">Cognition: learning, thinking & problem-solving</div>
 </div>
 
-<table ng-show="currentSection == 0">
-  <tr>
-    <th>Age In Months: </th>
-    <th ng-class="{'age-selected': currentAge == 0}">< 2</th>
-    <th ng-class="{'age-selected': currentAge == 2}">2</th>
-    <th ng-class="{'age-selected': currentAge == 3}">3</th>
-    <th ng-class="{'age-selected': currentAge == 4}">4</th>
-    <th ng-class="{'age-selected': currentAge == 6}">6</th>
-    <th ng-class="{'age-selected': currentAge == 8}">8</th>
-    <th ng-class="{'age-selected': currentAge == 10}">10</th>
-    <th ng-class="{'age-selected': currentAge == 12}">12</th>
-    <th ng-class="{'age-selected': currentAge == 14}">14</th>
-    <th ng-class="{'age-selected': currentAge == 16}">16</th>
-    <th ng-class="{'age-selected': currentAge == 17}">17</th>
-    <th ng-class="{'age-selected': currentAge == 18}">18</th>
-    <th ng-class="{'age-selected': currentAge == 20}">20</th>
-    <th ng-class="{'age-selected': currentAge == 22}">22</th>
-    <th ng-class="{'age-selected': currentAge == 28}">28</th>
-    <th ng-class="{'age-selected': currentAge == 32}">32</th>
-    <th ng-class="{'age-selected': currentAge == 34}">34</th>
-    <th ng-class="{'age-selected': currentAge == 36}">36</th>
-    <th ng-class="{'age-selected': currentAge == 48}">48</th>
-    <th ng-class="{'age-selected': currentAge == 60}">60</th>
-  </tr>
-  <tr>
-    <td class="item-name">coos</td>
-    <td ng-click="selectAge(0)"></td>
-    <td ng-click="selectAge(1)"><div class="chart-check"></div></td>
-    <td ng-click="selectAge(2)"></td>
-    <td ng-click="selectAge(3)"></td>
-    <td ng-click="selectAge(4)"></td>
-    <td ng-click="selectAge(5)"></td>
-    <td ng-click="selectAge(6)"></td>
-    <td ng-click="selectAge(7)"></td>
-    <td ng-click="selectAge(8)"></td>
-    <td ng-click="selectAge(9)"></td>
-    <td ng-click="selectAge(10)"></td>
-    <td ng-click="selectAge(11)"></td>
-    <td ng-click="selectAge(12)"></td>
-    <td ng-click="selectAge(13)"></td>
-    <td ng-click="selectAge(14)"></td>
-    <td ng-click="selectAge(15)"></td>
-    <td ng-click="selectAge(16)"></td>
-    <td ng-click="selectAge(17)"></td>
-    <td ng-click="selectAge(18)"></td>
-    <td ng-click="selectAge(19)"></td>
-  </tr>
-  <tr>
-    <td class="item-name">laughs</td>
-    <td ng-click="selectAge(0)"></td>
-    <td ng-click="selectAge(1)"></td>
-    <td ng-click="selectAge(2)"><div class="chart-check"></div></td>
-    <td ng-click="selectAge(3)"></td>
-    <td ng-click="selectAge(4)"></td>
-    <td ng-click="selectAge(5)"></td>
-    <td ng-click="selectAge(6)"></td>
-    <td ng-click="selectAge(7)"></td>
-    <td ng-click="selectAge(8)"></td>
-    <td ng-click="selectAge(9)"></td>
-    <td ng-click="selectAge(10)"></td>
-    <td ng-click="selectAge(11)"></td>
-    <td ng-click="selectAge(12)"></td>
-    <td ng-click="selectAge(13)"></td>
-    <td ng-click="selectAge(14)"></td>
-    <td ng-click="selectAge(15)"></td>
-    <td ng-click="selectAge(16)"></td>
-    <td ng-click="selectAge(17)"></td>
-    <td ng-click="selectAge(18)"></td>
-    <td ng-click="selectAge(19)"></td>
-  </tr>
-  <tr>
-    <td class="item-name">babbles</td>
-    <td ng-click="selectAge(0)"></td>
-    <td ng-click="selectAge(1)"></td>
-    <td ng-click="selectAge(2)"></td>
-    <td ng-click="selectAge(3)"></td>
-    <td ng-click="selectAge(4)"></td>
-    <td ng-click="selectAge(5)"><div class="chart-check"></div></td>
-    <td ng-click="selectAge(6)"></td>
-    <td ng-click="selectAge(7)"></td>
-    <td ng-click="selectAge(8)"></td>
-    <td ng-click="selectAge(9)"></td>
-    <td ng-click="selectAge(10)"></td>
-    <td ng-click="selectAge(11)"></td>
-    <td ng-click="selectAge(12)"></td>
-    <td ng-click="selectAge(13)"></td>
-    <td ng-click="selectAge(14)"></td>
-    <td ng-click="selectAge(15)"></td>
-    <td ng-click="selectAge(16)"></td>
-    <td ng-click="selectAge(17)"></td>
-    <td ng-click="selectAge(18)"></td>
-    <td ng-click="selectAge(19)"></td>
-  </tr>
-  <tr>
-    <td class="item-name">mama/dada</td>
-    <td ng-click="selectAge(0)"></td>
-    <td ng-click="selectAge(1)"></td>
-    <td ng-click="selectAge(2)"></td>
-    <td ng-click="selectAge(3)"></td>
-    <td ng-click="selectAge(4)"></td>
-    <td ng-click="selectAge(5)"></td>
-    <td ng-click="selectAge(6)"><div class="chart-check"></div></td>
-    <td ng-click="selectAge(7)"></td>
-    <td ng-click="selectAge(8)"></td>
-    <td ng-click="selectAge(9)"></td>
-    <td ng-click="selectAge(10)"></td>
-    <td ng-click="selectAge(11)"></td>
-    <td ng-click="selectAge(12)"></td>
-    <td ng-click="selectAge(13)"></td>
-    <td ng-click="selectAge(14)"></td>
-    <td ng-click="selectAge(15)"></td>
-    <td ng-click="selectAge(16)"></td>
-    <td ng-click="selectAge(17)"></td>
-    <td ng-click="selectAge(18)"></td>
-    <td ng-click="selectAge(19)"></td>
-  </tr>
-  <tr>
-    <td class="item-name">1st word</td>
-    <td ng-click="selectAge(0)"></td>
-    <td ng-click="selectAge(1)"></td>
-    <td ng-click="selectAge(2)"></td>
-    <td ng-click="selectAge(3)"></td>
-    <td ng-click="selectAge(4)"></td>
-    <td ng-click="selectAge(5)"></td>
-    <td ng-click="selectAge(6)"></td>
-    <td ng-click="selectAge(7)"><div class="chart-check"></div></td>
-    <td ng-click="selectAge(8)"></td>
-    <td ng-click="selectAge(9)"></td>
-    <td ng-click="selectAge(10)"></td>
-    <td ng-click="selectAge(11)"></td>
-    <td ng-click="selectAge(12)"></td>
-    <td ng-click="selectAge(13)"></td>
-    <td ng-click="selectAge(14)"></td>
-    <td ng-click="selectAge(15)"></td>
-    <td ng-click="selectAge(16)"></td>
-    <td ng-click="selectAge(17)"></td>
-    <td ng-click="selectAge(18)"></td>
-    <td ng-click="selectAge(19)"></td>
-  </tr>
-  <tr>
-    <td class="item-name">4-6 single words</td>
-    <td ng-click="selectAge(0)"></td>
-    <td ng-click="selectAge(1)"></td>
-    <td ng-click="selectAge(2)"></td>
-    <td ng-click="selectAge(3)"></td>
-    <td ng-click="selectAge(4)"></td>
-    <td ng-click="selectAge(5)"></td>
-    <td ng-click="selectAge(6)"></td>
-    <td ng-click="selectAge(7)"></td>
-    <td ng-click="selectAge(8)"></td>
-    <td ng-click="selectAge(9)"></td>
-    <td ng-click="selectAge(10)"><div class="chart-check"></div></td>
-    <td ng-click="selectAge(11)"></td>
-    <td ng-click="selectAge(12)"></td>
-    <td ng-click="selectAge(13)"></td>
-    <td ng-click="selectAge(14)"></td>
-    <td ng-click="selectAge(15)"></td>
-    <td ng-click="selectAge(16)"></td>
-    <td ng-click="selectAge(17)"></td>
-    <td ng-click="selectAge(18)"></td>
-    <td ng-click="selectAge(19)"></td>
-  </tr>
-  <tr>
-    <td class="item-name">tells needs</td>
-    <td ng-click="selectAge(0)"></td>
-    <td ng-click="selectAge(1)"></td>
-    <td ng-click="selectAge(2)"></td>
-    <td ng-click="selectAge(3)"></td>
-    <td ng-click="selectAge(4)"></td>
-    <td ng-click="selectAge(5)"></td>
-    <td ng-click="selectAge(6)"></td>
-    <td ng-click="selectAge(7)"></td>
-    <td ng-click="selectAge(8)"></td>
-    <td ng-click="selectAge(9)"></td>
-    <td ng-click="selectAge(10)"></td>
-    <td ng-click="selectAge(11)"><div class="chart-check"></div></td>
-    <td ng-click="selectAge(12)"></td>
-    <td ng-click="selectAge(13)"></td>
-    <td ng-click="selectAge(14)"></td>
-    <td ng-click="selectAge(15)"></td>
-    <td ng-click="selectAge(16)"></td>
-    <td ng-click="selectAge(17)"></td>
-    <td ng-click="selectAge(18)"></td>
-    <td ng-click="selectAge(19)"></td>
-  </tr>
-  <tr>
-    <td class="item-name">2-word sentences</td>
-    <td ng-click="selectAge(0)"></td>
-    <td ng-click="selectAge(1)"></td>
-    <td ng-click="selectAge(2)"></td>
-    <td ng-click="selectAge(3)"></td>
-    <td ng-click="selectAge(4)"></td>
-    <td ng-click="selectAge(5)"></td>
-    <td ng-click="selectAge(6)"></td>
-    <td ng-click="selectAge(7)"></td>
-    <td ng-click="selectAge(8)"></td>
-    <td ng-click="selectAge(9)"></td>
-    <td ng-click="selectAge(10)"></td>
-    <td ng-click="selectAge(11)"></td>
-    <td ng-click="selectAge(12)"><div class="chart-check"></div></td>
-    <td ng-click="selectAge(13)"></td>
-    <td ng-click="selectAge(14)"></td>
-    <td ng-click="selectAge(15)"></td>
-    <td ng-click="selectAge(16)"></td>
-    <td ng-click="selectAge(17)"></td>
-    <td ng-click="selectAge(18)"></td>
-    <td ng-click="selectAge(19)"></td>
-  </tr>
-  <tr>
-    <td class="item-name">50+ single words</td>
-    <td ng-click="selectAge(0)"></td>
-    <td ng-click="selectAge(1)"></td>
-    <td ng-click="selectAge(2)"></td>
-    <td ng-click="selectAge(3)"></td>
-    <td ng-click="selectAge(4)"></td>
-    <td ng-click="selectAge(5)"></td>
-    <td ng-click="selectAge(6)"></td>
-    <td ng-click="selectAge(7)"></td>
-    <td ng-click="selectAge(8)"></td>
-    <td ng-click="selectAge(9)"></td>
-    <td ng-click="selectAge(10)"></td>
-    <td ng-click="selectAge(11)"></td>
-    <td ng-click="selectAge(12)"></td>
-    <td ng-click="selectAge(13)"><div class="chart-check"></div></td>
-    <td ng-click="selectAge(14)"></td>
-    <td ng-click="selectAge(15)"></td>
-    <td ng-click="selectAge(16)"></td>
-    <td ng-click="selectAge(17)"></td>
-    <td ng-click="selectAge(18)"></td>
-    <td ng-click="selectAge(19)"></td>
-  </tr>
-  <tr>
-    <td class="item-name">uses nouns &amp; verbs</td>
-    <td ng-click="selectAge(0)"></td>
-    <td ng-click="selectAge(1)"></td>
-    <td ng-click="selectAge(2)"></td>
-    <td ng-click="selectAge(3)"></td>
-    <td ng-click="selectAge(4)"></td>
-    <td ng-click="selectAge(5)"></td>
-    <td ng-click="selectAge(6)"></td>
-    <td ng-click="selectAge(7)"></td>
-    <td ng-click="selectAge(8)"></td>
-    <td ng-click="selectAge(9)"></td>
-    <td ng-click="selectAge(10)"></td>
-    <td ng-click="selectAge(11)"></td>
-    <td ng-click="selectAge(12)"></td>
-    <td ng-click="selectAge(13)"></td>
-    <td ng-click="selectAge(14)"></td>
-    <td ng-click="selectAge(15)"><div class="chart-check"></div></td>
-    <td ng-click="selectAge(16)"></td>
-    <td ng-click="selectAge(17)"></td>
-    <td ng-click="selectAge(18)"></td>
-    <td ng-click="selectAge(19)"></td>
-  </tr>
-  <tr>
-    <td class="item-name">talks in sentences</td>
-    <td ng-click="selectAge(0)"></td>
-    <td ng-click="selectAge(1)"></td>
-    <td ng-click="selectAge(2)"></td>
-    <td ng-click="selectAge(3)"></td>
-    <td ng-click="selectAge(4)"></td>
-    <td ng-click="selectAge(5)"></td>
-    <td ng-click="selectAge(6)"></td>
-    <td ng-click="selectAge(7)"></td>
-    <td ng-click="selectAge(8)"></td>
-    <td ng-click="selectAge(9)"></td>
-    <td ng-click="selectAge(10)"></td>
-    <td ng-click="selectAge(11)"></td>
-    <td ng-click="selectAge(12)"></td>
-    <td ng-click="selectAge(13)"></td>
-    <td ng-click="selectAge(14)"></td>
-    <td ng-click="selectAge(15)"></td>
-    <td ng-click="selectAge(16)"></td>
-    <td ng-click="selectAge(17)"><div class="chart-check"></div></td>
-    <td ng-click="selectAge(18)"></td>
-    <td ng-click="selectAge(19)"></td>
-  </tr>
-  <tr>
-    <td class="item-name">uses all speech sounds</td>
-    <td ng-click="selectAge(0)"></td>
-    <td ng-click="selectAge(1)"></td>
-    <td ng-click="selectAge(2)"></td>
-    <td ng-click="selectAge(3)"></td>
-    <td ng-click="selectAge(4)"></td>
-    <td ng-click="selectAge(5)"></td>
-    <td ng-click="selectAge(6)"></td>
-    <td ng-click="selectAge(7)"></td>
-    <td ng-click="selectAge(8)"></td>
-    <td ng-click="selectAge(9)"></td>
-    <td ng-click="selectAge(10)"></td>
-    <td ng-click="selectAge(11)"></td>
-    <td ng-click="selectAge(12)"></td>
-    <td ng-click="selectAge(13)"></td>
-    <td ng-click="selectAge(14)"></td>
-    <td ng-click="selectAge(15)"></td>
-    <td ng-click="selectAge(16)"></td>
-    <td ng-click="selectAge(17)"></td>
-    <td ng-click="selectAge(18)"></td>
-    <td ng-click="selectAge(19)"><div class="chart-check"></div></td>
-  </tr>
-</table>
+<div class="row justify-content-center">
+  <div class="col-md-12">
+    <table ng-show="currentSection == 0">
+      <tr>
+        <th>Age In Months: </th>
+        <th ng-class="{'age-selected': currentAge == 0}">< 2</th>
+        <th ng-class="{'age-selected': currentAge == 2}">2</th>
+        <th ng-class="{'age-selected': currentAge == 3}">3</th>
+        <th ng-class="{'age-selected': currentAge == 4}">4</th>
+        <th ng-class="{'age-selected': currentAge == 6}">6</th>
+        <th ng-class="{'age-selected': currentAge == 8}">8</th>
+        <th ng-class="{'age-selected': currentAge == 10}">10</th>
+        <th ng-class="{'age-selected': currentAge == 12}">12</th>
+        <th ng-class="{'age-selected': currentAge == 14}">14</th>
+        <th ng-class="{'age-selected': currentAge == 16}">16</th>
+        <th ng-class="{'age-selected': currentAge == 17}">17</th>
+        <th ng-class="{'age-selected': currentAge == 18}">18</th>
+        <th ng-class="{'age-selected': currentAge == 20}">20</th>
+        <th ng-class="{'age-selected': currentAge == 22}">22</th>
+        <th ng-class="{'age-selected': currentAge == 28}">28</th>
+        <th ng-class="{'age-selected': currentAge == 32}">32</th>
+        <th ng-class="{'age-selected': currentAge == 34}">34</th>
+        <th ng-class="{'age-selected': currentAge == 36}">36</th>
+      </tr>
+      <tr>
+        <td class="item-name">coos</td>
+        <td ng-click="selectAge(0)"></td>
+        <td ng-click="selectAge(1)"><div class="chart-check"></div></td>
+        <td ng-click="selectAge(2)"></td>
+        <td ng-click="selectAge(3)"></td>
+        <td ng-click="selectAge(4)"></td>
+        <td ng-click="selectAge(5)"></td>
+        <td ng-click="selectAge(6)"></td>
+        <td ng-click="selectAge(7)"></td>
+        <td ng-click="selectAge(8)"></td>
+        <td ng-click="selectAge(9)"></td>
+        <td ng-click="selectAge(10)"></td>
+        <td ng-click="selectAge(11)"></td>
+        <td ng-click="selectAge(12)"></td>
+        <td ng-click="selectAge(13)"></td>
+        <td ng-click="selectAge(14)"></td>
+        <td ng-click="selectAge(15)"></td>
+        <td ng-click="selectAge(16)"></td>
+        <td ng-click="selectAge(17)"></td>
+      </tr>
+      <tr>
+        <td class="item-name">laughs</td>
+        <td ng-click="selectAge(0)"></td>
+        <td ng-click="selectAge(1)"></td>
+        <td ng-click="selectAge(2)"><div class="chart-check"></div></td>
+        <td ng-click="selectAge(3)"></td>
+        <td ng-click="selectAge(4)"></td>
+        <td ng-click="selectAge(5)"></td>
+        <td ng-click="selectAge(6)"></td>
+        <td ng-click="selectAge(7)"></td>
+        <td ng-click="selectAge(8)"></td>
+        <td ng-click="selectAge(9)"></td>
+        <td ng-click="selectAge(10)"></td>
+        <td ng-click="selectAge(11)"></td>
+        <td ng-click="selectAge(12)"></td>
+        <td ng-click="selectAge(13)"></td>
+        <td ng-click="selectAge(14)"></td>
+        <td ng-click="selectAge(15)"></td>
+        <td ng-click="selectAge(16)"></td>
+        <td ng-click="selectAge(17)"></td>
+      </tr>
+      <tr>
+        <td class="item-name">babbles</td>
+        <td ng-click="selectAge(0)"></td>
+        <td ng-click="selectAge(1)"></td>
+        <td ng-click="selectAge(2)"></td>
+        <td ng-click="selectAge(3)"></td>
+        <td ng-click="selectAge(4)"></td>
+        <td ng-click="selectAge(5)"><div class="chart-check"></div></td>
+        <td ng-click="selectAge(6)"></td>
+        <td ng-click="selectAge(7)"></td>
+        <td ng-click="selectAge(8)"></td>
+        <td ng-click="selectAge(9)"></td>
+        <td ng-click="selectAge(10)"></td>
+        <td ng-click="selectAge(11)"></td>
+        <td ng-click="selectAge(12)"></td>
+        <td ng-click="selectAge(13)"></td>
+        <td ng-click="selectAge(14)"></td>
+        <td ng-click="selectAge(15)"></td>
+        <td ng-click="selectAge(16)"></td>
+        <td ng-click="selectAge(17)"></td>
+      </tr>
+      <tr>
+        <td class="item-name">mama/dada</td>
+        <td ng-click="selectAge(0)"></td>
+        <td ng-click="selectAge(1)"></td>
+        <td ng-click="selectAge(2)"></td>
+        <td ng-click="selectAge(3)"></td>
+        <td ng-click="selectAge(4)"></td>
+        <td ng-click="selectAge(5)"></td>
+        <td ng-click="selectAge(6)"><div class="chart-check"></div></td>
+        <td ng-click="selectAge(7)"></td>
+        <td ng-click="selectAge(8)"></td>
+        <td ng-click="selectAge(9)"></td>
+        <td ng-click="selectAge(10)"></td>
+        <td ng-click="selectAge(11)"></td>
+        <td ng-click="selectAge(12)"></td>
+        <td ng-click="selectAge(13)"></td>
+        <td ng-click="selectAge(14)"></td>
+        <td ng-click="selectAge(15)"></td>
+        <td ng-click="selectAge(16)"></td>
+        <td ng-click="selectAge(17)"></td>
+      </tr>
+      <tr>
+        <td class="item-name">1st word</td>
+        <td ng-click="selectAge(0)"></td>
+        <td ng-click="selectAge(1)"></td>
+        <td ng-click="selectAge(2)"></td>
+        <td ng-click="selectAge(3)"></td>
+        <td ng-click="selectAge(4)"></td>
+        <td ng-click="selectAge(5)"></td>
+        <td ng-click="selectAge(6)"></td>
+        <td ng-click="selectAge(7)"><div class="chart-check"></div></td>
+        <td ng-click="selectAge(8)"></td>
+        <td ng-click="selectAge(9)"></td>
+        <td ng-click="selectAge(10)"></td>
+        <td ng-click="selectAge(11)"></td>
+        <td ng-click="selectAge(12)"></td>
+        <td ng-click="selectAge(13)"></td>
+        <td ng-click="selectAge(14)"></td>
+        <td ng-click="selectAge(15)"></td>
+        <td ng-click="selectAge(16)"></td>
+        <td ng-click="selectAge(17)"></td>
+      </tr>
+      <tr>
+        <td class="item-name">4-6 single words</td>
+        <td ng-click="selectAge(0)"></td>
+        <td ng-click="selectAge(1)"></td>
+        <td ng-click="selectAge(2)"></td>
+        <td ng-click="selectAge(3)"></td>
+        <td ng-click="selectAge(4)"></td>
+        <td ng-click="selectAge(5)"></td>
+        <td ng-click="selectAge(6)"></td>
+        <td ng-click="selectAge(7)"></td>
+        <td ng-click="selectAge(8)"></td>
+        <td ng-click="selectAge(9)"></td>
+        <td ng-click="selectAge(10)"><div class="chart-check"></div></td>
+        <td ng-click="selectAge(11)"></td>
+        <td ng-click="selectAge(12)"></td>
+        <td ng-click="selectAge(13)"></td>
+        <td ng-click="selectAge(14)"></td>
+        <td ng-click="selectAge(15)"></td>
+        <td ng-click="selectAge(16)"></td>
+        <td ng-click="selectAge(17)"></td>
+      </tr>
+      <tr>
+        <td class="item-name">tells needs</td>
+        <td ng-click="selectAge(0)"></td>
+        <td ng-click="selectAge(1)"></td>
+        <td ng-click="selectAge(2)"></td>
+        <td ng-click="selectAge(3)"></td>
+        <td ng-click="selectAge(4)"></td>
+        <td ng-click="selectAge(5)"></td>
+        <td ng-click="selectAge(6)"></td>
+        <td ng-click="selectAge(7)"></td>
+        <td ng-click="selectAge(8)"></td>
+        <td ng-click="selectAge(9)"></td>
+        <td ng-click="selectAge(10)"></td>
+        <td ng-click="selectAge(11)"><div class="chart-check"></div></td>
+        <td ng-click="selectAge(12)"></td>
+        <td ng-click="selectAge(13)"></td>
+        <td ng-click="selectAge(14)"></td>
+        <td ng-click="selectAge(15)"></td>
+        <td ng-click="selectAge(16)"></td>
+        <td ng-click="selectAge(17)"></td>
+      </tr>
+      <tr>
+        <td class="item-name">2-word sentences</td>
+        <td ng-click="selectAge(0)"></td>
+        <td ng-click="selectAge(1)"></td>
+        <td ng-click="selectAge(2)"></td>
+        <td ng-click="selectAge(3)"></td>
+        <td ng-click="selectAge(4)"></td>
+        <td ng-click="selectAge(5)"></td>
+        <td ng-click="selectAge(6)"></td>
+        <td ng-click="selectAge(7)"></td>
+        <td ng-click="selectAge(8)"></td>
+        <td ng-click="selectAge(9)"></td>
+        <td ng-click="selectAge(10)"></td>
+        <td ng-click="selectAge(11)"></td>
+        <td ng-click="selectAge(12)"><div class="chart-check"></div></td>
+        <td ng-click="selectAge(13)"></td>
+        <td ng-click="selectAge(14)"></td>
+        <td ng-click="selectAge(15)"></td>
+        <td ng-click="selectAge(16)"></td>
+        <td ng-click="selectAge(17)"></td>
+      </tr>
+      <tr>
+        <td class="item-name">50+ single words</td>
+        <td ng-click="selectAge(0)"></td>
+        <td ng-click="selectAge(1)"></td>
+        <td ng-click="selectAge(2)"></td>
+        <td ng-click="selectAge(3)"></td>
+        <td ng-click="selectAge(4)"></td>
+        <td ng-click="selectAge(5)"></td>
+        <td ng-click="selectAge(6)"></td>
+        <td ng-click="selectAge(7)"></td>
+        <td ng-click="selectAge(8)"></td>
+        <td ng-click="selectAge(9)"></td>
+        <td ng-click="selectAge(10)"></td>
+        <td ng-click="selectAge(11)"></td>
+        <td ng-click="selectAge(12)"></td>
+        <td ng-click="selectAge(13)"><div class="chart-check"></div></td>
+        <td ng-click="selectAge(14)"></td>
+        <td ng-click="selectAge(15)"></td>
+        <td ng-click="selectAge(16)"></td>
+        <td ng-click="selectAge(17)"></td>
+      </tr>
+      <tr>
+        <td class="item-name">uses nouns &amp; verbs</td>
+        <td ng-click="selectAge(0)"></td>
+        <td ng-click="selectAge(1)"></td>
+        <td ng-click="selectAge(2)"></td>
+        <td ng-click="selectAge(3)"></td>
+        <td ng-click="selectAge(4)"></td>
+        <td ng-click="selectAge(5)"></td>
+        <td ng-click="selectAge(6)"></td>
+        <td ng-click="selectAge(7)"></td>
+        <td ng-click="selectAge(8)"></td>
+        <td ng-click="selectAge(9)"></td>
+        <td ng-click="selectAge(10)"></td>
+        <td ng-click="selectAge(11)"></td>
+        <td ng-click="selectAge(12)"></td>
+        <td ng-click="selectAge(13)"></td>
+        <td ng-click="selectAge(14)"></td>
+        <td ng-click="selectAge(15)"><div class="chart-check"></div></td>
+        <td ng-click="selectAge(16)"></td>
+        <td ng-click="selectAge(17)"></td>
+      </tr>
+      <tr>
+        <td class="item-name">talks in sentences</td>
+        <td ng-click="selectAge(0)"></td>
+        <td ng-click="selectAge(1)"></td>
+        <td ng-click="selectAge(2)"></td>
+        <td ng-click="selectAge(3)"></td>
+        <td ng-click="selectAge(4)"></td>
+        <td ng-click="selectAge(5)"></td>
+        <td ng-click="selectAge(6)"></td>
+        <td ng-click="selectAge(7)"></td>
+        <td ng-click="selectAge(8)"></td>
+        <td ng-click="selectAge(9)"></td>
+        <td ng-click="selectAge(10)"></td>
+        <td ng-click="selectAge(11)"></td>
+        <td ng-click="selectAge(12)"></td>
+        <td ng-click="selectAge(13)"></td>
+        <td ng-click="selectAge(14)"></td>
+        <td ng-click="selectAge(15)"></td>
+        <td ng-click="selectAge(16)"></td>
+        <td ng-click="selectAge(17)"><div class="chart-check"></div></td>
+      </tr>
+      <tr>
+        <td class="item-name">uses all speech sounds</td>
+        <td ng-click="selectAge(0)"></td>
+        <td ng-click="selectAge(1)"></td>
+        <td ng-click="selectAge(2)"></td>
+        <td ng-click="selectAge(3)"></td>
+        <td ng-click="selectAge(4)"></td>
+        <td ng-click="selectAge(5)"></td>
+        <td ng-click="selectAge(6)"></td>
+        <td ng-click="selectAge(7)"></td>
+        <td ng-click="selectAge(8)"></td>
+        <td ng-click="selectAge(9)"></td>
+        <td ng-click="selectAge(10)"></td>
+        <td ng-click="selectAge(11)"></td>
+        <td ng-click="selectAge(12)"></td>
+        <td ng-click="selectAge(13)"></td>
+        <td ng-click="selectAge(14)"></td>
+        <td ng-click="selectAge(15)"></td>
+        <td ng-click="selectAge(16)"></td>
+        <td ng-click="selectAge(17)"></td>
+      </tr>
+    </table>
 
-<table ng-show="currentSection == 1">
-  <tr>
-    <th>Age In Months: </th>
-    <th ng-class="{'age-selected': currentAge == 0}">< 2</th>
-    <th ng-class="{'age-selected': currentAge == 2}">2</th>
-    <th ng-class="{'age-selected': currentAge == 3}">3</th>
-    <th ng-class="{'age-selected': currentAge == 4}">4</th>
-    <th ng-class="{'age-selected': currentAge == 6}">6</th>
-    <th ng-class="{'age-selected': currentAge == 8}">8</th>
-    <th ng-class="{'age-selected': currentAge == 10}">10</th>
-    <th ng-class="{'age-selected': currentAge == 12}">12</th>
-    <th ng-class="{'age-selected': currentAge == 14}">14</th>
-    <th ng-class="{'age-selected': currentAge == 16}">16</th>
-    <th ng-class="{'age-selected': currentAge == 17}">17</th>
-    <th ng-class="{'age-selected': currentAge == 18}">18</th>
-    <th ng-class="{'age-selected': currentAge == 20}">20</th>
-    <th ng-class="{'age-selected': currentAge == 22}">22</th>
-    <th ng-class="{'age-selected': currentAge == 28}">28</th>
-    <th ng-class="{'age-selected': currentAge == 32}">32</th>
-    <th ng-class="{'age-selected': currentAge == 34}">34</th>
-    <th ng-class="{'age-selected': currentAge == 36}">36</th>
-    <th ng-class="{'age-selected': currentAge == 48}">48</th>
-    <th ng-class="{'age-selected': currentAge == 60}">60</th>
-  </tr>
-  <tr>
-    <td class="item-name">responds to voice</td>
-    <td ng-click="selectAge(0)"><div class="chart-check"></div></td>
-    <td ng-click="selectAge(1)"></td>
-    <td ng-click="selectAge(2)"></td>
-    <td ng-click="selectAge(3)"></td>
-    <td ng-click="selectAge(4)"></td>
-    <td ng-click="selectAge(5)"></td>
-    <td ng-click="selectAge(6)"></td>
-    <td ng-click="selectAge(7)"></td>
-    <td ng-click="selectAge(8)"></td>
-    <td ng-click="selectAge(9)"></td>
-    <td ng-click="selectAge(10)"></td>
-    <td ng-click="selectAge(11)"></td>
-    <td ng-click="selectAge(12)"></td>
-    <td ng-click="selectAge(13)"></td>
-    <td ng-click="selectAge(14)"></td>
-    <td ng-click="selectAge(15)"></td>
-    <td ng-click="selectAge(16)"></td>
-    <td ng-click="selectAge(17)"></td>
-    <td ng-click="selectAge(18)"></td>
-    <td ng-click="selectAge(19)"></td>
-  </tr>
-  <tr>
-    <td class="item-name">differs sounds</td>
-    <td ng-click="selectAge(0)"></td>
-    <td ng-click="selectAge(1)"><div class="chart-check"></div></td>
-    <td ng-click="selectAge(2)"></td>
-    <td ng-click="selectAge(3)"></td>
-    <td ng-click="selectAge(4)"></td>
-    <td ng-click="selectAge(5)"></td>
-    <td ng-click="selectAge(6)"></td>
-    <td ng-click="selectAge(7)"></td>
-    <td ng-click="selectAge(8)"></td>
-    <td ng-click="selectAge(9)"></td>
-    <td ng-click="selectAge(10)"></td>
-    <td ng-click="selectAge(11)"></td>
-    <td ng-click="selectAge(12)"></td>
-    <td ng-click="selectAge(13)"></td>
-    <td ng-click="selectAge(14)"></td>
-    <td ng-click="selectAge(15)"></td>
-    <td ng-click="selectAge(16)"></td>
-    <td ng-click="selectAge(17)"></td>
-    <td ng-click="selectAge(18)"></td>
-    <td ng-click="selectAge(19)"></td>
-  </tr>
-  <tr>
-    <td class="item-name">responds to "no"</td>
-    <td ng-click="selectAge(0)"></td>
-    <td ng-click="selectAge(1)"></td>
-    <td ng-click="selectAge(2)"></td>
-    <td ng-click="selectAge(3)"></td>
-    <td ng-click="selectAge(4)"><div class="chart-check"></div></td>
-    <td ng-click="selectAge(5)"></td>
-    <td ng-click="selectAge(6)"></td>
-    <td ng-click="selectAge(7)"></td>
-    <td ng-click="selectAge(8)"></td>
-    <td ng-click="selectAge(9)"></td>
-    <td ng-click="selectAge(10)"></td>
-    <td ng-click="selectAge(11)"></td>
-    <td ng-click="selectAge(12)"></td>
-    <td ng-click="selectAge(13)"></td>
-    <td ng-click="selectAge(14)"></td>
-    <td ng-click="selectAge(15)"></td>
-    <td ng-click="selectAge(16)"></td>
-    <td ng-click="selectAge(17)"></td>
-    <td ng-click="selectAge(18)"></td>
-    <td ng-click="selectAge(19)"></td>
-  </tr>
-  <tr>
-    <td class="item-name">1-step command</td>
-    <td ng-click="selectAge(0)"></td>
-    <td ng-click="selectAge(1)"></td>
-    <td ng-click="selectAge(2)"></td>
-    <td ng-click="selectAge(3)"></td>
-    <td ng-click="selectAge(4)"></td>
-    <td ng-click="selectAge(5)"></td>
-    <td ng-click="selectAge(6)"></td>
-    <td ng-click="selectAge(7)"><div class="chart-check"></div></td>
-    <td ng-click="selectAge(8)"></td>
-    <td ng-click="selectAge(9)"></td>
-    <td ng-click="selectAge(10)"></td>
-    <td ng-click="selectAge(11)"></td>
-    <td ng-click="selectAge(12)"></td>
-    <td ng-click="selectAge(13)"></td>
-    <td ng-click="selectAge(14)"></td>
-    <td ng-click="selectAge(15)"></td>
-    <td ng-click="selectAge(16)"></td>
-    <td ng-click="selectAge(17)"></td>
-    <td ng-click="selectAge(18)"></td>
-    <td ng-click="selectAge(19)"></td>
-  </tr>
-  <tr>
-    <td class="item-name">points to body parts</td>
-    <td ng-click="selectAge(0)"></td>
-    <td ng-click="selectAge(1)"></td>
-    <td ng-click="selectAge(2)"></td>
-    <td ng-click="selectAge(3)"></td>
-    <td ng-click="selectAge(4)"></td>
-    <td ng-click="selectAge(5)"></td>
-    <td ng-click="selectAge(6)"></td>
-    <td ng-click="selectAge(7)"></td>
-    <td ng-click="selectAge(8)"></td>
-    <td ng-click="selectAge(9)"><div class="chart-check"></div></td>
-    <td ng-click="selectAge(10)"></td>
-    <td ng-click="selectAge(11)"></td>
-    <td ng-click="selectAge(12)"></td>
-    <td ng-click="selectAge(13)"></td>
-    <td ng-click="selectAge(14)"></td>
-    <td ng-click="selectAge(15)"></td>
-    <td ng-click="selectAge(16)"></td>
-    <td ng-click="selectAge(17)"></td>
-    <td ng-click="selectAge(18)"></td>
-    <td ng-click="selectAge(19)"></td>
-  </tr>
-  <tr>
-    <td class="item-name">2-step command</td>
-    <td ng-click="selectAge(0)"></td>
-    <td ng-click="selectAge(1)"></td>
-    <td ng-click="selectAge(2)"></td>
-    <td ng-click="selectAge(3)"></td>
-    <td ng-click="selectAge(4)"></td>
-    <td ng-click="selectAge(5)"></td>
-    <td ng-click="selectAge(6)"></td>
-    <td ng-click="selectAge(7)"></td>
-    <td ng-click="selectAge(8)"></td>
-    <td ng-click="selectAge(9)"></td>
-    <td ng-click="selectAge(10)"></td>
-    <td ng-click="selectAge(11)"></td>
-    <td ng-click="selectAge(12)"><div class="chart-check"></div></td>
-    <td ng-click="selectAge(13)"></td>
-    <td ng-click="selectAge(14)"></td>
-    <td ng-click="selectAge(15)"></td>
-    <td ng-click="selectAge(16)"></td>
-    <td ng-click="selectAge(17)"></td>
-    <td ng-click="selectAge(18)"></td>
-    <td ng-click="selectAge(19)"></td>
-  </tr>
-  <tr>
-    <td class="item-name">points to objects described by use</td>
-    <td ng-click="selectAge(0)"></td>
-    <td ng-click="selectAge(1)"></td>
-    <td ng-click="selectAge(2)"></td>
-    <td ng-click="selectAge(3)"></td>
-    <td ng-click="selectAge(4)"></td>
-    <td ng-click="selectAge(5)"></td>
-    <td ng-click="selectAge(6)"></td>
-    <td ng-click="selectAge(7)"></td>
-    <td ng-click="selectAge(8)"></td>
-    <td ng-click="selectAge(9)"></td>
-    <td ng-click="selectAge(10)"></td>
-    <td ng-click="selectAge(11)"></td>
-    <td ng-click="selectAge(12)"></td>
-    <td ng-click="selectAge(13)"></td>
-    <td ng-click="selectAge(14)"><div class="chart-check"></div></td>
-    <td ng-click="selectAge(15)"></td>
-    <td ng-click="selectAge(16)"></td>
-    <td ng-click="selectAge(17)"></td>
-    <td ng-click="selectAge(18)"></td>
-    <td ng-click="selectAge(19)"></td>
-  </tr>
-  <tr>
-    <td class="item-name">complex commands</td>
-    <td ng-click="selectAge(0)"></td>
-    <td ng-click="selectAge(1)"></td>
-    <td ng-click="selectAge(2)"></td>
-    <td ng-click="selectAge(3)"></td>
-    <td ng-click="selectAge(4)"></td>
-    <td ng-click="selectAge(5)"></td>
-    <td ng-click="selectAge(6)"></td>
-    <td ng-click="selectAge(7)"></td>
-    <td ng-click="selectAge(8)"></td>
-    <td ng-click="selectAge(9)"></td>
-    <td ng-click="selectAge(10)"></td>
-    <td ng-click="selectAge(11)"></td>
-    <td ng-click="selectAge(12)"></td>
-    <td ng-click="selectAge(13)"></td>
-    <td ng-click="selectAge(14)"></td>
-    <td ng-click="selectAge(15)"><div class="chart-check"></div></td>
-    <td ng-click="selectAge(16)"></td>
-    <td ng-click="selectAge(17)"></td>
-    <td ng-click="selectAge(18)"></td>
-    <td ng-click="selectAge(19)"></td>
-  </tr>
-  <tr>
-    <td class="item-name">what? who?</td>
-    <td ng-click="selectAge(0)"></td>
-    <td ng-click="selectAge(1)"></td>
-    <td ng-click="selectAge(2)"></td>
-    <td ng-click="selectAge(3)"></td>
-    <td ng-click="selectAge(4)"></td>
-    <td ng-click="selectAge(5)"></td>
-    <td ng-click="selectAge(6)"></td>
-    <td ng-click="selectAge(7)"></td>
-    <td ng-click="selectAge(8)"></td>
-    <td ng-click="selectAge(9)"></td>
-    <td ng-click="selectAge(10)"></td>
-    <td ng-click="selectAge(11)"></td>
-    <td ng-click="selectAge(12)"></td>
-    <td ng-click="selectAge(13)"></td>
-    <td ng-click="selectAge(14)"></td>
-    <td ng-click="selectAge(15)"></td>
-    <td ng-click="selectAge(16)"></td>
-    <td ng-click="selectAge(17)"><div class="chart-check"></div></td>
-    <td ng-click="selectAge(18)"></td>
-    <td ng-click="selectAge(19)"></td>
-  </tr>
-  <tr>
-    <td class="item-name">how? yesterday?</td>
-    <td ng-click="selectAge(0)"></td>
-    <td ng-click="selectAge(1)"></td>
-    <td ng-click="selectAge(2)"></td>
-    <td ng-click="selectAge(3)"></td>
-    <td ng-click="selectAge(4)"></td>
-    <td ng-click="selectAge(5)"></td>
-    <td ng-click="selectAge(6)"></td>
-    <td ng-click="selectAge(7)"></td>
-    <td ng-click="selectAge(8)"></td>
-    <td ng-click="selectAge(9)"></td>
-    <td ng-click="selectAge(10)"></td>
-    <td ng-click="selectAge(11)"></td>
-    <td ng-click="selectAge(12)"></td>
-    <td ng-click="selectAge(13)"></td>
-    <td ng-click="selectAge(14)"></td>
-    <td ng-click="selectAge(15)"></td>
-    <td ng-click="selectAge(16)"></td>
-    <td ng-click="selectAge(17)"></td>
-    <td ng-click="selectAge(18)"></td>
-    <td ng-click="selectAge(19)"><div class="chart-check"></div></td>
-  </tr>
-</table>
+    <table ng-show="currentSection == 1">
+      <tr>
+        <th>Age In Months: </th>
+        <th ng-class="{'age-selected': currentAge == 0}">< 2</th>
+        <th ng-class="{'age-selected': currentAge == 2}">2</th>
+        <th ng-class="{'age-selected': currentAge == 3}">3</th>
+        <th ng-class="{'age-selected': currentAge == 4}">4</th>
+        <th ng-class="{'age-selected': currentAge == 6}">6</th>
+        <th ng-class="{'age-selected': currentAge == 8}">8</th>
+        <th ng-class="{'age-selected': currentAge == 10}">10</th>
+        <th ng-class="{'age-selected': currentAge == 12}">12</th>
+        <th ng-class="{'age-selected': currentAge == 14}">14</th>
+        <th ng-class="{'age-selected': currentAge == 16}">16</th>
+        <th ng-class="{'age-selected': currentAge == 17}">17</th>
+        <th ng-class="{'age-selected': currentAge == 18}">18</th>
+        <th ng-class="{'age-selected': currentAge == 20}">20</th>
+        <th ng-class="{'age-selected': currentAge == 22}">22</th>
+        <th ng-class="{'age-selected': currentAge == 28}">28</th>
+        <th ng-class="{'age-selected': currentAge == 32}">32</th>
+        <th ng-class="{'age-selected': currentAge == 34}">34</th>
+        <th ng-class="{'age-selected': currentAge == 36}">36</th>
+      </tr>
+      <tr>
+        <td class="item-name">responds to voice</td>
+        <td ng-click="selectAge(0)"><div class="chart-check"></div></td>
+        <td ng-click="selectAge(1)"></td>
+        <td ng-click="selectAge(2)"></td>
+        <td ng-click="selectAge(3)"></td>
+        <td ng-click="selectAge(4)"></td>
+        <td ng-click="selectAge(5)"></td>
+        <td ng-click="selectAge(6)"></td>
+        <td ng-click="selectAge(7)"></td>
+        <td ng-click="selectAge(8)"></td>
+        <td ng-click="selectAge(9)"></td>
+        <td ng-click="selectAge(10)"></td>
+        <td ng-click="selectAge(11)"></td>
+        <td ng-click="selectAge(12)"></td>
+        <td ng-click="selectAge(13)"></td>
+        <td ng-click="selectAge(14)"></td>
+        <td ng-click="selectAge(15)"></td>
+        <td ng-click="selectAge(16)"></td>
+        <td ng-click="selectAge(17)"></td>
+      </tr>
+      <tr>
+        <td class="item-name">differs sounds</td>
+        <td ng-click="selectAge(0)"></td>
+        <td ng-click="selectAge(1)"><div class="chart-check"></div></td>
+        <td ng-click="selectAge(2)"></td>
+        <td ng-click="selectAge(3)"></td>
+        <td ng-click="selectAge(4)"></td>
+        <td ng-click="selectAge(5)"></td>
+        <td ng-click="selectAge(6)"></td>
+        <td ng-click="selectAge(7)"></td>
+        <td ng-click="selectAge(8)"></td>
+        <td ng-click="selectAge(9)"></td>
+        <td ng-click="selectAge(10)"></td>
+        <td ng-click="selectAge(11)"></td>
+        <td ng-click="selectAge(12)"></td>
+        <td ng-click="selectAge(13)"></td>
+        <td ng-click="selectAge(14)"></td>
+        <td ng-click="selectAge(15)"></td>
+        <td ng-click="selectAge(16)"></td>
+        <td ng-click="selectAge(17)"></td>
+      </tr>
+      <tr>
+        <td class="item-name">responds to "no"</td>
+        <td ng-click="selectAge(0)"></td>
+        <td ng-click="selectAge(1)"></td>
+        <td ng-click="selectAge(2)"></td>
+        <td ng-click="selectAge(3)"></td>
+        <td ng-click="selectAge(4)"><div class="chart-check"></div></td>
+        <td ng-click="selectAge(5)"></td>
+        <td ng-click="selectAge(6)"></td>
+        <td ng-click="selectAge(7)"></td>
+        <td ng-click="selectAge(8)"></td>
+        <td ng-click="selectAge(9)"></td>
+        <td ng-click="selectAge(10)"></td>
+        <td ng-click="selectAge(11)"></td>
+        <td ng-click="selectAge(12)"></td>
+        <td ng-click="selectAge(13)"></td>
+        <td ng-click="selectAge(14)"></td>
+        <td ng-click="selectAge(15)"></td>
+        <td ng-click="selectAge(16)"></td>
+        <td ng-click="selectAge(17)"></td>
+      </tr>
+      <tr>
+        <td class="item-name">1-step command</td>
+        <td ng-click="selectAge(0)"></td>
+        <td ng-click="selectAge(1)"></td>
+        <td ng-click="selectAge(2)"></td>
+        <td ng-click="selectAge(3)"></td>
+        <td ng-click="selectAge(4)"></td>
+        <td ng-click="selectAge(5)"></td>
+        <td ng-click="selectAge(6)"></td>
+        <td ng-click="selectAge(7)"><div class="chart-check"></div></td>
+        <td ng-click="selectAge(8)"></td>
+        <td ng-click="selectAge(9)"></td>
+        <td ng-click="selectAge(10)"></td>
+        <td ng-click="selectAge(11)"></td>
+        <td ng-click="selectAge(12)"></td>
+        <td ng-click="selectAge(13)"></td>
+        <td ng-click="selectAge(14)"></td>
+        <td ng-click="selectAge(15)"></td>
+        <td ng-click="selectAge(16)"></td>
+        <td ng-click="selectAge(17)"></td>
+      </tr>
+      <tr>
+        <td class="item-name">points to body parts</td>
+        <td ng-click="selectAge(0)"></td>
+        <td ng-click="selectAge(1)"></td>
+        <td ng-click="selectAge(2)"></td>
+        <td ng-click="selectAge(3)"></td>
+        <td ng-click="selectAge(4)"></td>
+        <td ng-click="selectAge(5)"></td>
+        <td ng-click="selectAge(6)"></td>
+        <td ng-click="selectAge(7)"></td>
+        <td ng-click="selectAge(8)"></td>
+        <td ng-click="selectAge(9)"><div class="chart-check"></div></td>
+        <td ng-click="selectAge(10)"></td>
+        <td ng-click="selectAge(11)"></td>
+        <td ng-click="selectAge(12)"></td>
+        <td ng-click="selectAge(13)"></td>
+        <td ng-click="selectAge(14)"></td>
+        <td ng-click="selectAge(15)"></td>
+        <td ng-click="selectAge(16)"></td>
+        <td ng-click="selectAge(17)"></td>
+      </tr>
+      <tr>
+        <td class="item-name">2-step command</td>
+        <td ng-click="selectAge(0)"></td>
+        <td ng-click="selectAge(1)"></td>
+        <td ng-click="selectAge(2)"></td>
+        <td ng-click="selectAge(3)"></td>
+        <td ng-click="selectAge(4)"></td>
+        <td ng-click="selectAge(5)"></td>
+        <td ng-click="selectAge(6)"></td>
+        <td ng-click="selectAge(7)"></td>
+        <td ng-click="selectAge(8)"></td>
+        <td ng-click="selectAge(9)"></td>
+        <td ng-click="selectAge(10)"></td>
+        <td ng-click="selectAge(11)"></td>
+        <td ng-click="selectAge(12)"><div class="chart-check"></div></td>
+        <td ng-click="selectAge(13)"></td>
+        <td ng-click="selectAge(14)"></td>
+        <td ng-click="selectAge(15)"></td>
+        <td ng-click="selectAge(16)"></td>
+        <td ng-click="selectAge(17)"></td>
+      </tr>
+      <tr>
+        <td class="item-name">points to objects described by use</td>
+        <td ng-click="selectAge(0)"></td>
+        <td ng-click="selectAge(1)"></td>
+        <td ng-click="selectAge(2)"></td>
+        <td ng-click="selectAge(3)"></td>
+        <td ng-click="selectAge(4)"></td>
+        <td ng-click="selectAge(5)"></td>
+        <td ng-click="selectAge(6)"></td>
+        <td ng-click="selectAge(7)"></td>
+        <td ng-click="selectAge(8)"></td>
+        <td ng-click="selectAge(9)"></td>
+        <td ng-click="selectAge(10)"></td>
+        <td ng-click="selectAge(11)"></td>
+        <td ng-click="selectAge(12)"></td>
+        <td ng-click="selectAge(13)"></td>
+        <td ng-click="selectAge(14)"><div class="chart-check"></div></td>
+        <td ng-click="selectAge(15)"></td>
+        <td ng-click="selectAge(16)"></td>
+        <td ng-click="selectAge(17)"></td>
+      </tr>
+      <tr>
+        <td class="item-name">complex commands</td>
+        <td ng-click="selectAge(0)"></td>
+        <td ng-click="selectAge(1)"></td>
+        <td ng-click="selectAge(2)"></td>
+        <td ng-click="selectAge(3)"></td>
+        <td ng-click="selectAge(4)"></td>
+        <td ng-click="selectAge(5)"></td>
+        <td ng-click="selectAge(6)"></td>
+        <td ng-click="selectAge(7)"></td>
+        <td ng-click="selectAge(8)"></td>
+        <td ng-click="selectAge(9)"></td>
+        <td ng-click="selectAge(10)"></td>
+        <td ng-click="selectAge(11)"></td>
+        <td ng-click="selectAge(12)"></td>
+        <td ng-click="selectAge(13)"></td>
+        <td ng-click="selectAge(14)"></td>
+        <td ng-click="selectAge(15)"><div class="chart-check"></div></td>
+        <td ng-click="selectAge(16)"></td>
+        <td ng-click="selectAge(17)"></td>
+      </tr>
+      <tr>
+        <td class="item-name">what? who?</td>
+        <td ng-click="selectAge(0)"></td>
+        <td ng-click="selectAge(1)"></td>
+        <td ng-click="selectAge(2)"></td>
+        <td ng-click="selectAge(3)"></td>
+        <td ng-click="selectAge(4)"></td>
+        <td ng-click="selectAge(5)"></td>
+        <td ng-click="selectAge(6)"></td>
+        <td ng-click="selectAge(7)"></td>
+        <td ng-click="selectAge(8)"></td>
+        <td ng-click="selectAge(9)"></td>
+        <td ng-click="selectAge(10)"></td>
+        <td ng-click="selectAge(11)"></td>
+        <td ng-click="selectAge(12)"></td>
+        <td ng-click="selectAge(13)"></td>
+        <td ng-click="selectAge(14)"></td>
+        <td ng-click="selectAge(15)"></td>
+        <td ng-click="selectAge(16)"></td>
+        <td ng-click="selectAge(17)"><div class="chart-check"></div></td>
+      </tr>
+      <tr>
+        <td class="item-name">how? yesterday?</td>
+        <td ng-click="selectAge(0)"></td>
+        <td ng-click="selectAge(1)"></td>
+        <td ng-click="selectAge(2)"></td>
+        <td ng-click="selectAge(3)"></td>
+        <td ng-click="selectAge(4)"></td>
+        <td ng-click="selectAge(5)"></td>
+        <td ng-click="selectAge(6)"></td>
+        <td ng-click="selectAge(7)"></td>
+        <td ng-click="selectAge(8)"></td>
+        <td ng-click="selectAge(9)"></td>
+        <td ng-click="selectAge(10)"></td>
+        <td ng-click="selectAge(11)"></td>
+        <td ng-click="selectAge(12)"></td>
+        <td ng-click="selectAge(13)"></td>
+        <td ng-click="selectAge(14)"></td>
+        <td ng-click="selectAge(15)"></td>
+        <td ng-click="selectAge(16)"></td>
+        <td ng-click="selectAge(17)"></td>
+      </tr>
+    </table>
 
-<table ng-show="currentSection == 2">
-  <tr>
-    <th>Age In Months: </th>
-    <th ng-class="{'age-selected': currentAge == 0}">< 2</th>
-    <th ng-class="{'age-selected': currentAge == 2}">2</th>
-    <th ng-class="{'age-selected': currentAge == 3}">3</th>
-    <th ng-class="{'age-selected': currentAge == 4}">4</th>
-    <th ng-class="{'age-selected': currentAge == 6}">6</th>
-    <th ng-class="{'age-selected': currentAge == 8}">8</th>
-    <th ng-class="{'age-selected': currentAge == 10}">10</th>
-    <th ng-class="{'age-selected': currentAge == 12}">12</th>
-    <th ng-class="{'age-selected': currentAge == 14}">14</th>
-    <th ng-class="{'age-selected': currentAge == 16}">16</th>
-    <th ng-class="{'age-selected': currentAge == 17}">17</th>
-    <th ng-class="{'age-selected': currentAge == 18}">18</th>
-    <th ng-class="{'age-selected': currentAge == 20}">20</th>
-    <th ng-class="{'age-selected': currentAge == 22}">22</th>
-    <th ng-class="{'age-selected': currentAge == 28}">28</th>
-    <th ng-class="{'age-selected': currentAge == 32}">32</th>
-    <th ng-class="{'age-selected': currentAge == 34}">34</th>
-    <th ng-class="{'age-selected': currentAge == 36}">36</th>
-    <th ng-class="{'age-selected': currentAge == 48}">48</th>
-    <th ng-class="{'age-selected': currentAge == 60}">60</th>
-  </tr>
-  <tr>
-    <td class="item-name">smiles</td>
-    <td ng-click="selectAge(0)"><div class="chart-check"></div></td>
-    <td ng-click="selectAge(1)"></td>
-    <td ng-click="selectAge(2)"></td>
-    <td ng-click="selectAge(3)"></td>
-    <td ng-click="selectAge(4)"></td>
-    <td ng-click="selectAge(5)"></td>
-    <td ng-click="selectAge(6)"></td>
-    <td ng-click="selectAge(7)"></td>
-    <td ng-click="selectAge(8)"></td>
-    <td ng-click="selectAge(9)"></td>
-    <td ng-click="selectAge(10)"></td>
-    <td ng-click="selectAge(11)"></td>
-    <td ng-click="selectAge(12)"></td>
-    <td ng-click="selectAge(13)"></td>
-    <td ng-click="selectAge(14)"></td>
-    <td ng-click="selectAge(15)"></td>
-    <td ng-click="selectAge(16)"></td>
-    <td ng-click="selectAge(17)"></td>
-    <td ng-click="selectAge(18)"></td>
-    <td ng-click="selectAge(19)"></td>
-  </tr>
-  <tr>
-    <td class="item-name">recognizes parents</td>
-    <td ng-click="selectAge(0)"></td>
-    <td ng-click="selectAge(1)"><div class="chart-check"></div></td>
-    <td ng-click="selectAge(2)"></td>
-    <td ng-click="selectAge(3)"></td>
-    <td ng-click="selectAge(4)"></td>
-    <td ng-click="selectAge(5)"></td>
-    <td ng-click="selectAge(6)"></td>
-    <td ng-click="selectAge(7)"></td>
-    <td ng-click="selectAge(8)"></td>
-    <td ng-click="selectAge(9)"></td>
-    <td ng-click="selectAge(10)"></td>
-    <td ng-click="selectAge(11)"></td>
-    <td ng-click="selectAge(12)"></td>
-    <td ng-click="selectAge(13)"></td>
-    <td ng-click="selectAge(14)"></td>
-    <td ng-click="selectAge(15)"></td>
-    <td ng-click="selectAge(16)"></td>
-    <td ng-click="selectAge(17)"></td>
-    <td ng-click="selectAge(18)"></td>
-    <td ng-click="selectAge(19)"></td>
-  </tr>
-  <tr>
-    <td class="item-name">recognizes objects</td>
-    <td ng-click="selectAge(0)"></td>
-    <td ng-click="selectAge(1)"></td>
-    <td ng-click="selectAge(2)"><div class="chart-check"></div></td>
-    <td ng-click="selectAge(3)"></td>
-    <td ng-click="selectAge(4)"></td>
-    <td ng-click="selectAge(5)"></td>
-    <td ng-click="selectAge(6)"></td>
-    <td ng-click="selectAge(7)"></td>
-    <td ng-click="selectAge(8)"></td>
-    <td ng-click="selectAge(9)"></td>
-    <td ng-click="selectAge(10)"></td>
-    <td ng-click="selectAge(11)"></td>
-    <td ng-click="selectAge(12)"></td>
-    <td ng-click="selectAge(13)"></td>
-    <td ng-click="selectAge(14)"></td>
-    <td ng-click="selectAge(15)"></td>
-    <td ng-click="selectAge(16)"></td>
-    <td ng-click="selectAge(17)"></td>
-    <td ng-click="selectAge(18)"></td>
-    <td ng-click="selectAge(19)"></td>
-  </tr>
-  <tr>
-    <td class="item-name">responds to facial expressions</td>
-    <td ng-click="selectAge(0)"></td>
-    <td ng-click="selectAge(1)"></td>
-    <td ng-click="selectAge(2)"></td>
-    <td ng-click="selectAge(3)"><div class="chart-check"></div></td>
-    <td ng-click="selectAge(4)"></td>
-    <td ng-click="selectAge(5)"></td>
-    <td ng-click="selectAge(6)"></td>
-    <td ng-click="selectAge(7)"></td>
-    <td ng-click="selectAge(8)"></td>
-    <td ng-click="selectAge(9)"></td>
-    <td ng-click="selectAge(10)"></td>
-    <td ng-click="selectAge(11)"></td>
-    <td ng-click="selectAge(12)"></td>
-    <td ng-click="selectAge(13)"></td>
-    <td ng-click="selectAge(14)"></td>
-    <td ng-click="selectAge(15)"></td>
-    <td ng-click="selectAge(16)"></td>
-    <td ng-click="selectAge(17)"></td>
-    <td ng-click="selectAge(18)"></td>
-    <td ng-click="selectAge(19)"></td>
-  </tr>
-  <tr>
-    <td class="item-name">initiates games</td>
-    <td ng-click="selectAge(0)"></td>
-    <td ng-click="selectAge(1)"></td>
-    <td ng-click="selectAge(2)"></td>
-    <td ng-click="selectAge(3)"></td>
-    <td ng-click="selectAge(4)"><div class="chart-check"></div></td>
-    <td ng-click="selectAge(5)"></td>
-    <td ng-click="selectAge(6)"></td>
-    <td ng-click="selectAge(7)"></td>
-    <td ng-click="selectAge(8)"></td>
-    <td ng-click="selectAge(9)"></td>
-    <td ng-click="selectAge(10)"></td>
-    <td ng-click="selectAge(11)"></td>
-    <td ng-click="selectAge(12)"></td>
-    <td ng-click="selectAge(13)"></td>
-    <td ng-click="selectAge(14)"></td>
-    <td ng-click="selectAge(15)"></td>
-    <td ng-click="selectAge(16)"></td>
-    <td ng-click="selectAge(17)"></td>
-    <td ng-click="selectAge(18)"></td>
-    <td ng-click="selectAge(19)"></td>
-  </tr>
-  <tr>
-    <td class="item-name">initiates conversation</td>
-    <td ng-click="selectAge(0)"></td>
-    <td ng-click="selectAge(1)"></td>
-    <td ng-click="selectAge(2)"></td>
-    <td ng-click="selectAge(3)"></td>
-    <td ng-click="selectAge(4)"></td>
-    <td ng-click="selectAge(5)"></td>
-    <td ng-click="selectAge(6)"></td>
-    <td ng-click="selectAge(7)"></td>
-    <td ng-click="selectAge(8)"></td>
-    <td ng-click="selectAge(9)"></td>
-    <td ng-click="selectAge(10)"></td>
-    <td ng-click="selectAge(11)"></td>
-    <td ng-click="selectAge(12)"></td>
-    <td ng-click="selectAge(13)"></td>
-    <td ng-click="selectAge(14)"></td>
-    <td ng-click="selectAge(15)"></td>
-    <td ng-click="selectAge(16)"><div class="chart-check"></div></td>
-    <td ng-click="selectAge(17)"></td>
-    <td ng-click="selectAge(18)"></td>
-    <td ng-click="selectAge(19)"></td>
-  </tr>
-</table>
+    <table ng-show="currentSection == 2">
+      <tr>
+        <th>Age In Months: </th>
+        <th ng-class="{'age-selected': currentAge == 0}">< 2</th>
+        <th ng-class="{'age-selected': currentAge == 2}">2</th>
+        <th ng-class="{'age-selected': currentAge == 3}">3</th>
+        <th ng-class="{'age-selected': currentAge == 4}">4</th>
+        <th ng-class="{'age-selected': currentAge == 6}">6</th>
+        <th ng-class="{'age-selected': currentAge == 8}">8</th>
+        <th ng-class="{'age-selected': currentAge == 10}">10</th>
+        <th ng-class="{'age-selected': currentAge == 12}">12</th>
+        <th ng-class="{'age-selected': currentAge == 14}">14</th>
+        <th ng-class="{'age-selected': currentAge == 16}">16</th>
+        <th ng-class="{'age-selected': currentAge == 17}">17</th>
+        <th ng-class="{'age-selected': currentAge == 18}">18</th>
+        <th ng-class="{'age-selected': currentAge == 20}">20</th>
+        <th ng-class="{'age-selected': currentAge == 22}">22</th>
+        <th ng-class="{'age-selected': currentAge == 28}">28</th>
+        <th ng-class="{'age-selected': currentAge == 32}">32</th>
+        <th ng-class="{'age-selected': currentAge == 34}">34</th>
+        <th ng-class="{'age-selected': currentAge == 36}">36</th>
+      </tr>
+      <tr>
+        <td class="item-name">smiles</td>
+        <td ng-click="selectAge(0)"><div class="chart-check"></div></td>
+        <td ng-click="selectAge(1)"></td>
+        <td ng-click="selectAge(2)"></td>
+        <td ng-click="selectAge(3)"></td>
+        <td ng-click="selectAge(4)"></td>
+        <td ng-click="selectAge(5)"></td>
+        <td ng-click="selectAge(6)"></td>
+        <td ng-click="selectAge(7)"></td>
+        <td ng-click="selectAge(8)"></td>
+        <td ng-click="selectAge(9)"></td>
+        <td ng-click="selectAge(10)"></td>
+        <td ng-click="selectAge(11)"></td>
+        <td ng-click="selectAge(12)"></td>
+        <td ng-click="selectAge(13)"></td>
+        <td ng-click="selectAge(14)"></td>
+        <td ng-click="selectAge(15)"></td>
+        <td ng-click="selectAge(16)"></td>
+        <td ng-click="selectAge(17)"></td>
+      </tr>
+      <tr>
+        <td class="item-name">recognizes parents</td>
+        <td ng-click="selectAge(0)"></td>
+        <td ng-click="selectAge(1)"><div class="chart-check"></div></td>
+        <td ng-click="selectAge(2)"></td>
+        <td ng-click="selectAge(3)"></td>
+        <td ng-click="selectAge(4)"></td>
+        <td ng-click="selectAge(5)"></td>
+        <td ng-click="selectAge(6)"></td>
+        <td ng-click="selectAge(7)"></td>
+        <td ng-click="selectAge(8)"></td>
+        <td ng-click="selectAge(9)"></td>
+        <td ng-click="selectAge(10)"></td>
+        <td ng-click="selectAge(11)"></td>
+        <td ng-click="selectAge(12)"></td>
+        <td ng-click="selectAge(13)"></td>
+        <td ng-click="selectAge(14)"></td>
+        <td ng-click="selectAge(15)"></td>
+        <td ng-click="selectAge(16)"></td>
+        <td ng-click="selectAge(17)"></td>
+      </tr>
+      <tr>
+        <td class="item-name">recognizes objects</td>
+        <td ng-click="selectAge(0)"></td>
+        <td ng-click="selectAge(1)"></td>
+        <td ng-click="selectAge(2)"><div class="chart-check"></div></td>
+        <td ng-click="selectAge(3)"></td>
+        <td ng-click="selectAge(4)"></td>
+        <td ng-click="selectAge(5)"></td>
+        <td ng-click="selectAge(6)"></td>
+        <td ng-click="selectAge(7)"></td>
+        <td ng-click="selectAge(8)"></td>
+        <td ng-click="selectAge(9)"></td>
+        <td ng-click="selectAge(10)"></td>
+        <td ng-click="selectAge(11)"></td>
+        <td ng-click="selectAge(12)"></td>
+        <td ng-click="selectAge(13)"></td>
+        <td ng-click="selectAge(14)"></td>
+        <td ng-click="selectAge(15)"></td>
+        <td ng-click="selectAge(16)"></td>
+        <td ng-click="selectAge(17)"></td>
+      </tr>
+      <tr>
+        <td class="item-name">responds to facial expressions</td>
+        <td ng-click="selectAge(0)"></td>
+        <td ng-click="selectAge(1)"></td>
+        <td ng-click="selectAge(2)"></td>
+        <td ng-click="selectAge(3)"><div class="chart-check"></div></td>
+        <td ng-click="selectAge(4)"></td>
+        <td ng-click="selectAge(5)"></td>
+        <td ng-click="selectAge(6)"></td>
+        <td ng-click="selectAge(7)"></td>
+        <td ng-click="selectAge(8)"></td>
+        <td ng-click="selectAge(9)"></td>
+        <td ng-click="selectAge(10)"></td>
+        <td ng-click="selectAge(11)"></td>
+        <td ng-click="selectAge(12)"></td>
+        <td ng-click="selectAge(13)"></td>
+        <td ng-click="selectAge(14)"></td>
+        <td ng-click="selectAge(15)"></td>
+        <td ng-click="selectAge(16)"></td>
+        <td ng-click="selectAge(17)"></td>
+      </tr>
+      <tr>
+        <td class="item-name">initiates games</td>
+        <td ng-click="selectAge(0)"></td>
+        <td ng-click="selectAge(1)"></td>
+        <td ng-click="selectAge(2)"></td>
+        <td ng-click="selectAge(3)"></td>
+        <td ng-click="selectAge(4)"><div class="chart-check"></div></td>
+        <td ng-click="selectAge(5)"></td>
+        <td ng-click="selectAge(6)"></td>
+        <td ng-click="selectAge(7)"></td>
+        <td ng-click="selectAge(8)"></td>
+        <td ng-click="selectAge(9)"></td>
+        <td ng-click="selectAge(10)"></td>
+        <td ng-click="selectAge(11)"></td>
+        <td ng-click="selectAge(12)"></td>
+        <td ng-click="selectAge(13)"></td>
+        <td ng-click="selectAge(14)"></td>
+        <td ng-click="selectAge(15)"></td>
+        <td ng-click="selectAge(16)"></td>
+        <td ng-click="selectAge(17)"></td>
+      </tr>
+      <tr>
+        <td class="item-name">initiates conversation</td>
+        <td ng-click="selectAge(0)"></td>
+        <td ng-click="selectAge(1)"></td>
+        <td ng-click="selectAge(2)"></td>
+        <td ng-click="selectAge(3)"></td>
+        <td ng-click="selectAge(4)"></td>
+        <td ng-click="selectAge(5)"></td>
+        <td ng-click="selectAge(6)"></td>
+        <td ng-click="selectAge(7)"></td>
+        <td ng-click="selectAge(8)"></td>
+        <td ng-click="selectAge(9)"></td>
+        <td ng-click="selectAge(10)"></td>
+        <td ng-click="selectAge(11)"></td>
+        <td ng-click="selectAge(12)"></td>
+        <td ng-click="selectAge(13)"></td>
+        <td ng-click="selectAge(14)"></td>
+        <td ng-click="selectAge(15)"></td>
+        <td ng-click="selectAge(16)"><div class="chart-check"></div></td>
+        <td ng-click="selectAge(17)"></td>
+      </tr>
+    </table>
+  </div>
+</div>
 
 <div ng-show="currentAge >= 0 && currentAge < 4" class="row mt-4 mb-4">
   <div class="col-md-12">
     <div class="card">
-      <div class="card-title">Your Baby At 2 Months</div>
+      <div class="card-title">Your Infant At 2 Months</div>
       <div class="card-body">
         <ul>
-          <li>Begins to smile at people</li>
-          <li>Coos, makes gurlging sounds</li>
-          <li>Begins to follow things with eyes and recognize people at a distance</li>
+          <li>Initiates smiling</li>
+          <li>Coos and gurgles sounds</li>
+          <li>Tracks things with eyes & recognizes familiar people</li>
         </ul>
       </div>
     </div>
@@ -842,14 +784,13 @@
 <div ng-show="currentAge >= 4 && currentAge < 6" class="row mt-4 mb-4">
   <div class="col-md-12">
     <div class="card">
-      <div class="card-title">Your Baby At 4 Months</div>
+      <div class="card-title">Your Infant At 4 Months</div>
       <div class="card-body">
         <ul>
-          <li>Begins to babble</li>
-          <li>Babbles with expression and copies sounds he hears</li>
-          <li>Reaches for toy with one hand</li>
-          <li>Uses hands and eyes together, such as seeing a toy and reaching for it</li>
-          <li>Recognizes familiar people and things at a distance</li>
+          <li>Starts to babble</li>
+          <li>Babbles with expression and models sounds heard</li>
+          <li>Reaches for a toy</li>
+          <li>Uses hands and eyes together</li>
         </ul>
       </div>
     </div>
@@ -859,13 +800,13 @@
 <div ng-show="currentAge >= 6 && currentAge < 10" class="row mt-4 mb-4">
   <div class="col-md-12">
     <div class="card">
-      <div class="card-title">Your Baby At 6 Months</div>
+      <div class="card-title">Your Infant At 6 Months</div>
       <div class="card-body">
         <ul>
-          <li>Likes to play with others, especially parents</li>
-          <li>Strings vowels together when babbling ("ah," "eh," "oh")</li>
+          <li>Displays pleasure while playing with familiar people</li>
+          <li>Strings vowels when babbling <em>'ah', 'oh'</em></li>
           <li>Responds to own name</li>
-          <li>Shows curiosity about things and tries to get things that are out of reach</li>
+          <li>Shows curiosity for things and reaches for them</li>
         </ul>
       </div>
     </div>
@@ -875,14 +816,14 @@
 <div ng-show="currentAge >= 10 && currentAge < 12" class="row mt-4 mb-4">
   <div class="col-md-12">
     <div class="card">
-      <div class="card-title">Your Baby At 9 Months</div>
+      <div class="card-title">Your Infant At 9 Months</div>
       <div class="card-body">
         <ul>
-          <li>Understands "no"</li>
-          <li>Makes a lot of different sounds like "mamamama" and "babababa"</li>
-          <li>Uses fingers to point at things</li>
-          <li>Watches the path of something as it falls</li>
-          <li>Plays peek-a-boo</li>
+          <li>Understands <em>'no'</em></li>
+          <li>Makes many different sounds like 'mamamama' and 'babababa'</li>
+          <li>Uses finger to point</li>
+          <li>Follows the path of an item falling</li>
+          <li>Likes to play peek-a-boo</li>
         </ul>
       </div>
     </div>
@@ -895,15 +836,15 @@
       <div class="card-title">Your Child At 1 Year</div>
       <div class="card-body">
         <ul>
-          <li>Hands you a book when he wants to hear a story</li>
-          <li>Plays games such as "peek-a-boo" and "pat-a-cake"</li>
-          <li>Responds to simple spoken requests</li>
-          <li>Uses simple gestures, like shaking head "no" or waving "bye-bye"</li>
-          <li>Makes sounds with changes in tone (sounds more like speech)</li>
-          <li>Says "mama" and "dada" and exclamations like "uh-oh!"</li>
-          <li>Tries to say words you say</li>
+          <li>Gives you a book when they want you read a story to them</li>
+          <li>Likes to play games such as 'peek-a-boo' and 'patty-cake'</li>
+          <li>Responds to simple spoken directions</li>
+          <li>Uses simple gestures, likes to shake head to 'no' or waves 'bye-bye', blows a kiss</li>
+          <li>Sounds have tone changes that resemble speech</li>
+          <li>Says 'mama', 'dada' and can express with 'uh-oh!'</li>
+          <li>Pays attention and tries to repeat words they hear</li>
           <li>Copies gestures</li>
-          <li>Follows simple directions like "pick up the toy"</li>
+          <li>Follows simple requests, 'pick up the toy', 'come here'</li>
         </ul>
       </div>
     </div>
@@ -916,11 +857,11 @@
       <div class="card-title">Your Child At 18 Months (1 1/2 Years)</div>
       <div class="card-body">
         <ul>
-          <li>Says several single words</li>
-          <li>Says and shakes head "no"</li>
-          <li>Points to show someone what he wants</li>
-          <li>Knows what ordinary things are for; for example, telephone, brush, spoon</li>
-          <li>Can follow 1-step verbal commands without any gestures; for example, sits when you say "sit down"</li>
+          <li>Says many single words</li>
+          <li>Says and shakes head 'no'</li>
+          <li>Points to show what they want</li>
+          <li>Understands what simple things are for such as telephone, brush, spoon, TV</li>
+          <li>Follows 1-step verbal commands without any gestures</li>
         </ul>
       </div>
     </div>
@@ -930,18 +871,16 @@
 <div ng-show="currentAge >= 24 && currentAge < 36" class="row mt-4 mb-4">
   <div class="col-md-12">
     <div class="card">
-      <div class="card-title">Your Child At 2 Years</div>
+      <div class="card-title">Your Toddler At 2 Years</div>
       <div class="card-body">
         <ul>
-          <li>Shows defiant behaviour</li>
-          <li>Plays mainly beside other children, but is beginning to include other children, such as in chase games</li>
-          <li>Points to things or pictures when they are named</li>
-          <li>Says sentences with 2 to 4 words</li>
-          <li>Follows simple instructions</li>
-          <li>Repeats words overheard in conversation</li>
-          <li>Points to things in a book</li>
-          <li>Completes sentences and rhymes in familiar books</li>
-          <li>Follows two-step instructions such as "Pick up your shoes and put them in the closet."</li>
+          <li>Displays defiant behaviour</li>
+          <li>Plays mostly beside other children and begins to include other children, such as in chase games</li>
+          <li>Can point to things or pictures when they are named</li>
+          <li>Says sentences and phrases using 2 to 4 words</li>
+          <li>Can repeat words they hear from conversation</li>
+          <li>Is familiar with rhymes in books they know</li>
+          <li>Can follow 2-step verbal commands such as <em>'Pick up your toys and put them in the box.'</em></li>
         </ul>
       </div>
     </div>
@@ -951,16 +890,16 @@
 <div ng-show="currentAge >= 36" class="row mt-4 mb-4">
   <div class="col-md-12">
     <div class="card">
-      <div class="card-title">Your Child At 3 Years</div>
+      <div class="card-title">Your Toddler At 3 Years</div>
       <div class="card-body">
         <ul>
-          <li>Follows instructions with 2 or 3 steps</li>
-          <li>Can name most familiar things</li>
-          <li>Understands words like "in," "on," and "under"</li>
-          <li>Says first name, age, and sex</li>
-          <li>Says words like "I," "me," "we," and "you" and some plurals (cars, dogs, cats)</li>
-          <li>Carries on a conversation using 2 to 3 sentences</li>
-          <li>Copies a circle with pencil or crayon</li>
+          <li>Follows 2-step and 3-step verbal commands</li>
+          <li>Can name many familiar objects</li>
+          <li>Understands words like 'behind', 'in', 'on', and 'under'</li>
+          <li>Says first name, age, and gender</li>
+          <li>Says words such as 'I', 'me', 'we', and 'you' and displays knowledge of plurals (cars, dogs)</li>
+          <li>Can speak using 2 to 3 short sentences</li>
+          <li>Can copy a circle</li>
         </ul>
       </div>
     </div>
