@@ -22,11 +22,6 @@
     font-size: 1em;
   }
 
-/*  .checked {
-    background-color: #4c80c3;
-    border-radius: 30px;
-  }*/
-
   .chart-check {
     width: 20px;
     height: 20px;
@@ -82,6 +77,12 @@
   .age-selected {
     background-color: #24388d;
     color: white;
+  }
+
+  .checklist-help .card {
+    border: 1px solid #24388d;
+    color: #24388d;
+    background-color: white;
   }
 </style>
 
@@ -767,9 +768,21 @@
 </div>
 
 <div ng-show="currentAge >= 0 && currentAge < 4" class="row mt-4 mb-4">
-  <div class="col-md-12">
+  <div class="col-md-6">
     <div class="card">
-      <div class="card-title">Your Infant At 2 Months</div>
+      <div class="card-title">What does your infant do at 2 months?</div>
+      <div class="card-body">
+        <ul>
+          <li>Initiates smiling</li>
+          <li>Coos and gurgles sounds</li>
+          <li>Tracks things with eyes & recognizes familiar people</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 checklist-help">
+    <div class="card">
+      <div class="card-title">What you can do with your 2 month old infant:</div>
       <div class="card-body">
         <ul>
           <li>Initiates smiling</li>
