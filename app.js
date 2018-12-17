@@ -6,6 +6,8 @@ var app = angular.module('myApp', [
   'myApp.about',
   'myApp.home',
   'myApp.contact',
+  'myApp.thankyou',
+  'myApp.error',
   'myApp.services',
   'myApp.initiatives',
   'myApp.checklist',
