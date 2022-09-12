@@ -15,4 +15,11 @@ angular.module('myApp.home', ['ngRoute'])
     interval: 5000
   })
 
+  $('.carousel-control-next').click(function(event){
+    event.preventDefault();
+  });
+  $('.arousel-control-prev').click(function(event){
+    event.preventDefault();
+  });
+
 }]);
