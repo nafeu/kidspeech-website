@@ -11,7 +11,29 @@ angular.module('myApp.checklist', ['ngRoute'])
 
 .controller('ChecklistCtrl', ['$scope', '$document', function($scope, $document) {
 
-  $scope.ages = [0, 2, 3, 4, 6, 8, 10, 12, 14, 16, 17, 18, 20, 22, 28, 32, 34, 36, 48, 60];
+  $scope.ages = [
+    0,  // 0
+    2,  // 1
+    3,  // 2
+    4,  // 3
+    6,  // 4
+    8,  // 5 Removed
+    10, // 6
+    12, // 7
+    14, // 8 Removed
+    16, // 9
+    17, // 10
+    18, // 11
+    20, // 12
+    22, // 13
+    28, // 14
+    32, // 15
+    34, // 16
+    36, // 17
+    48, // 18
+    60  // 19
+  ];
+
   $scope.currentAge;
   $scope.currentSection;
 
