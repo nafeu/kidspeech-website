@@ -119,7 +119,7 @@
         <th ng-class="{'age-selected': currentAge == 3}">3</th>
         <th ng-class="{'age-selected': currentAge == 4}">4</th>
         <th ng-class="{'age-selected': currentAge == 6}">6</th>
-        <th ng-class="{'age-selected': currentAge == 10}">10</th>
+        <th ng-class="{'age-selected': currentAge == 9}">9</th>
         <th ng-class="{'age-selected': currentAge == 12}">12</th>
         <th ng-class="{'age-selected': currentAge == 16}">16</th>
         <th ng-class="{'age-selected': currentAge == 17}">17</th>
@@ -234,9 +234,9 @@
         <td ng-click="selectAge(3)"></td>
         <td ng-click="selectAge(4)"></td>
         <td ng-click="selectAge(6)"></td>
-        <td ng-click="selectAge(7)"></td>
+        <td ng-click="selectAge(7)"><div class="chart-check"></div></td>
         <td ng-click="selectAge(9)"></td>
-        <td ng-click="selectAge(10)"><div class="chart-check"></div></td>
+        <td ng-click="selectAge(10)"></td>
         <td ng-click="selectAge(11)"></td>
         <td ng-click="selectAge(12)"></td>
         <td ng-click="selectAge(13)"></td>
@@ -275,8 +275,8 @@
         <td ng-click="selectAge(7)"></td>
         <td ng-click="selectAge(9)"></td>
         <td ng-click="selectAge(10)"></td>
-        <td ng-click="selectAge(11)"></td>
-        <td ng-click="selectAge(12)"><div class="chart-check"></div></td>
+        <td ng-click="selectAge(11)"><div class="chart-check"></div></td>
+        <td ng-click="selectAge(12)"></td>
         <td ng-click="selectAge(13)"></td>
         <td ng-click="selectAge(14)"></td>
         <td ng-click="selectAge(15)"></td>
@@ -294,9 +294,9 @@
         <td ng-click="selectAge(7)"></td>
         <td ng-click="selectAge(9)"></td>
         <td ng-click="selectAge(10)"></td>
-        <td ng-click="selectAge(11)"></td>
+        <td ng-click="selectAge(11)"><div class="chart-check"></div></td>
         <td ng-click="selectAge(12)"></td>
-        <td ng-click="selectAge(13)"><div class="chart-check"></div></td>
+        <td ng-click="selectAge(13)"></td>
         <td ng-click="selectAge(14)"><div class="chart-check"></div></td>
         <td ng-click="selectAge(15)"></td>
         <td ng-click="selectAge(16)"></td>
@@ -369,7 +369,7 @@
         <th ng-class="{'age-selected': currentAge == 3}">3</th>
         <th ng-class="{'age-selected': currentAge == 4}">4</th>
         <th ng-class="{'age-selected': currentAge == 6}">6</th>
-        <th ng-class="{'age-selected': currentAge == 10}">10</th>
+        <th ng-class="{'age-selected': currentAge == 9}">9</th>
         <th ng-class="{'age-selected': currentAge == 12}">12</th>
         <th ng-class="{'age-selected': currentAge == 16}">16</th>
         <th ng-class="{'age-selected': currentAge == 17}">17</th>
@@ -506,8 +506,8 @@
         <td ng-click="selectAge(7)"></td>
         <td ng-click="selectAge(9)"></td>
         <td ng-click="selectAge(10)"></td>
-        <td ng-click="selectAge(11)"></td>
-        <td ng-click="selectAge(12)"><div class="chart-check"></div></td>
+        <td ng-click="selectAge(11)"><div class="chart-check"></div></td>
+        <td ng-click="selectAge(12)"></td>
         <td ng-click="selectAge(13)"></td>
         <td ng-click="selectAge(14)"></td>
         <td ng-click="selectAge(15)"></td>
@@ -600,7 +600,7 @@
         <th ng-class="{'age-selected': currentAge == 3}">3</th>
         <th ng-class="{'age-selected': currentAge == 4}">4</th>
         <th ng-class="{'age-selected': currentAge == 6}">6</th>
-        <th ng-class="{'age-selected': currentAge == 10}">10</th>
+        <th ng-class="{'age-selected': currentAge == 9}">9</th>
         <th ng-class="{'age-selected': currentAge == 12}">12</th>
         <th ng-class="{'age-selected': currentAge == 16}">16</th>
         <th ng-class="{'age-selected': currentAge == 17}">17</th>
@@ -653,8 +653,8 @@
       <tr>
         <td class="item-name">recognizes objects</td>
         <td ng-click="selectAge(0)"></td>
-        <td ng-click="selectAge(1)"></td>
-        <td ng-click="selectAge(2)"><div class="chart-check"></div></td>
+        <td ng-click="selectAge(1)"><div class="chart-check"></div></td>
+        <td ng-click="selectAge(2)"></td>
         <td ng-click="selectAge(3)"></td>
         <td ng-click="selectAge(4)"></td>
         <td ng-click="selectAge(6)"></td>
@@ -748,7 +748,7 @@
 <div ng-show="currentAge >= 2 && currentAge < 4" class="row mt-4 mb-4">
   <div class="col-md-12">
     <div class="card">
-      <div class="card-title">What does your infant do at 2 months?</div>
+      <div class="card-title">What does your infant do at {{currentAge}} months?</div>
       <div class="card-body">
         <ul>
           <li>Initiates smiling</li>
@@ -776,7 +776,7 @@
   </div>
 </div>
 
-<div ng-show="currentAge >= 6 && currentAge < 10" class="row mt-4 mb-4">
+<div ng-show="currentAge >= 6 && currentAge < 9" class="row mt-4 mb-4">
   <div class="col-md-12">
     <div class="card">
       <div class="card-title">Your Infant At 6 Months</div>
@@ -792,7 +792,7 @@
   </div>
 </div>
 
-<div ng-show="currentAge >= 10 && currentAge < 12" class="row mt-4 mb-4">
+<div ng-show="currentAge >= 9 && currentAge < 12" class="row mt-4 mb-4">
   <div class="col-md-12">
     <div class="card">
       <div class="card-title">Your Infant At 9 Months</div>
@@ -812,7 +812,8 @@
 <div ng-show="currentAge >= 12 && currentAge < 18" class="row mt-4 mb-4">
   <div class="col-md-12">
     <div class="card">
-      <div class="card-title">Your Child At 1 Year</div>
+      <div ng-show="currentAge == 12" class="card-title">Your Child At 1 Year</div>
+      <div ng-show="currentAge == 16" class="card-title">Your Child At 1 Year 4 months</div>
       <div class="card-body">
         <ul>
           <li>Gives you a book when they want you read a story to them</li>
@@ -840,7 +841,7 @@
           <li>Says and shakes head 'no'</li>
           <li>Points to show what they want</li>
           <li>Understands what simple things are for such as telephone, brush, spoon, TV</li>
-          <li>Follows 1-step verbal commands without any gestures</li>
+          <li>Follows 2-step verbal commands without any gestures</li>
         </ul>
       </div>
     </div>
@@ -850,7 +851,8 @@
 <div ng-show="currentAge >= 24 && currentAge < 36" class="row mt-4 mb-4">
   <div class="col-md-12">
     <div class="card">
-      <div class="card-title">Your Toddler At 2 Years</div>
+      <div ng-show="currentAge == 28" class="card-title">Your Toddler At 2 Years 4 Months</div>
+      <div ng-show="currentAge == 32" class="card-title">Your Toddler At 2 Years 8 Months</div>
       <div class="card-body">
         <ul>
           <li>Displays defiant behaviour</li>

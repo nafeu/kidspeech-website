@@ -18,7 +18,7 @@ angular.module('myApp.checklist', ['ngRoute'])
     4,  // 3
     6,  // 4
     8,  // 5 Removed
-    10, // 6
+    9, // 6
     12, // 7
     14, // 8 Removed
     16, // 9
