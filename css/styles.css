@@ -388,3 +388,14 @@ body {
 .navbar-main .nav-link {
   color: white !important;
 }
+
+.navbar-main .new-link {
+  font-weight: bold;
+  font-style: italic;
+  color: red !important;
+  font-size: 20px;
+}
+
+.navbar-nav {
+  align-items: center;
+}

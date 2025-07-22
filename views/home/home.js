@@ -18,7 +18,7 @@ angular.module('myApp.home', ['ngRoute'])
   $('.carousel-control-next').click(function(event){
     event.preventDefault();
   });
-  $('.arousel-control-prev').click(function(event){
+  $('.carousel-control-prev').click(function(event){
     event.preventDefault();
   });
 
