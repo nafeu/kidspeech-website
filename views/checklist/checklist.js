@@ -22,10 +22,10 @@ angular.module('myApp.checklist', ['ngRoute'])
     12, // 7
     14, // 8 Removed
     16, // 9
-    17, // 10
+    17, // 10 Removed
     18, // 11
-    20, // 12
-    22, // 13
+    20, // 12 Removed
+    22, // 13 Removed
     28, // 14
     32, // 15
     34, // 16
